@@ -1,0 +1,358 @@
+title_id,movie_rating,movie_directors,movie_writers,movie_stars,movie_genres,release_year
+tt00078718,7.4,Norman Jewison ,Valerie Curtin & Barry Levinson ,Al Pacino & Jack Warden & John Forsythe & Lee Strasberg & Jeffrey Tambor ,Crime & Drama & Thriller ,1979
+tt00100944,6.9,Nicolas Roeg ,Roald Dahl & Allan Scott ,Anjelica Huston & Mai Zetterling & Jasen Fisher & Rowan Atkinson & Bill Paterson ,Adventure & Comedy & Family & Fantasy & Horror & Mystery ,1990
+tt00107120,6.9,Kenny Ortega ,David Kirschner & Mick Garris & Mick Garris ,Bette Midler & Sarah Jessica Parker & Kathy Najimy & Omri Katz & Thora Birch ,Comedy & Family & Fantasy ,1993
+tt00171580,6.1,Neil LaBute ,John C. Richards & John C. Richards & James Flamberg ,Morgan Freeman & Renée Zellweger & Chris Rock & Greg Kinnear & Aaron Eckhart ,Comedy & Crime & Drama & Romance ,2000
+tt00266697,8.1,Quentin Tarantino ,Quentin Tarantino & Quentin Tarantino & Uma Thurman ,Uma Thurman & Lucy Liu & Vivica A. Fox & Daryl Hannah & David Carradine ,Action & Crime & Thriller ,2003
+tt00266915,6.6,Brett Ratner ,Ross LaManna & Jeff Nathanson ,Jackie Chan & Chris Tucker & John Lone & Ziyi Zhang & Roselyn Sanchez ,Action & Comedy & Crime & Thriller ,2001
+tt00268126,7.7,Spike Jonze ,Susan Orlean & Charlie Kaufman ,Nicolas Cage & Tilda Swinton & Meryl Streep & Chris Cooper & Jay Tavare ,Comedy & Drama ,2002
+tt00273435,6.2,Atom Egoyan ,Atom Egoyan ,Simon Abkarian & Charles Aznavour & Christopher Plummer & Arsinée Khanjian & Setta Keshishian ,Drama & War ,2002
+tt00303933,5.9,Charles Stone III ,Shawn Schepps & Tina Gordon & Shawn Schepps ,Nick Cannon & Zoe Saldana & Orlando Jones & Leonard Roberts & GQ ,Comedy & Drama & Romance & Music ,2002
+tt00309987,7.2,Bernardo Bertolucci ,Gilbert Adair & Gilbert Adair ,Michael Pitt & Eva Green & Louis Garrel & Anna Chancellor & Robin Renucci ,Drama & Romance ,2003
+tt00311113,7.4,Peter Weir ,Patrick O'Brian & Peter Weir & John Collee ,Russell Crowe & Paul Bettany & James D'Arcy & Edward Woodall & Chris Larkin ,Action & Adventure & Drama & History & War ,2003
+tt00427389,7.6,Anisa Mehdi ,Anisa Mehdi & John B. Bredar ,Keith David & Umar Faruq Abd-Allah & Daisy Khan & Iyad Madani & Ismail Mahbob ,Documentary ,2003
+tt00783640,6.7,Todd Robinson ,Todd Robinson ,Sebastian Stan & Alison Sudol & Asher Miles Fallica & LisaGay Hamilton & Bradley Whitford ,Drama & War ,2019
+tt00805647,5.3,Robert Zemeckis ,Robert Zemeckis & Kenya Barris & Guillermo del Toro ,Chris Rock & Jahzir Bruno & Octavia Spencer & Brian Bovell & Joseph Zinyemba ,Adventure & Comedy & Family & Fantasy & Horror & Mystery ,2020
+tt00983946,4.9,Jeff Wadlow ,Jeff Wadlow & Christopher Roach & Jillian Jacobs ,Michael Peña & Maggie Q & Lucy Hale & Austin Stowell & Jimmy O. Yang ,Action & Adventure & Fantasy & Horror & Mystery & Thriller ,2020
+tt01051906,7.1,Leigh Whannell ,Leigh Whannell & Leigh Whannell & H.G. Wells ,Elisabeth Moss & Oliver Jackson-Cohen & Harriet Dyer & Aldis Hodge & Storm Reid ,Drama & Horror & Mystery & Sci-Fi & Thriller ,2020
+tt01070874,7.8,Aaron Sorkin ,Aaron Sorkin ,Eddie Redmayne & Alex Sharp & Sacha Baron Cohen & Jeremy Strong & John Carroll Lynch ,Drama & History & Thriller ,2020
+tt01087461,4.6,Michael Goi ,Michael Goi ,Amber Perkins & Rachel Quinn & Dean Waite & Jael Elizabeth Steinmeyer & Kara Wang ,Drama & Horror & Thriller ,2011
+tt01273221,4.2,Mathew Cullen ,Roberta Hanley & Martin Amis & Martin Amis ,Amber Heard & Billy Bob Thornton & Jason Isaacs & Cara Delevingne & Gemma Chan ,Crime & Mystery & Thriller ,2018
+tt01392190,8.1,George Miller ,George Miller & Brendan McCarthy & Nick Lathouris ,Tom Hardy & Charlize Theron & Nicholas Hoult & Hugh Keays-Byrne & Josh Helman ,Action & Adventure & Sci-Fi & Thriller ,2015
+tt01727824,8,Bryan Singer ,Anthony McCarten & Peter Morgan & Anthony McCarten ,Rami Malek & Lucy Boynton & Gwilym Lee & Ben Hardy & Joseph Mazzello ,Biography & Drama & Music ,2018
+tt01830643,4.3,Darren Lynn Bousman ,Ari Margolis & James Morley III & David Tish ,Maggie Q & Luke Hemsworth & Alex Essoe & Kat Ingkarat & Kelly B. Jones ,Horror & Mystery & Thriller ,2020
+tt01838556,6,Mark Williams ,Steve Allrich & Mark Williams & Steve Allrich ,Liam Neeson & Kate Walsh & Jai Courtney & Jeffrey Donovan & Anthony Ramos ,Action & Crime & Drama & Thriller ,2020
+tt01918734,4.8,Seth Larney ,Seth Larney & Dave Paterson ,Kodi Smit-McPhee & Ryan Kwanten & Sana'a Shaik & Deborah Mailman & Aaron Glenane ,Sci-Fi ,2020
+tt01965308,7.8,Peter Joseph ,Peter Joseph ,Chris Silcox & Shiah Luna & Goldie Hoffman & Chris Grabher & Michael Marinaccio ,Fantasy & Sci-Fi ,2020
+tt02140571,6.1,Natalie Krinsky ,Natalie Krinsky ,Geraldine Viswanathan & Dacre Montgomery & Utkarsh Ambudkar & Molly Gordon & Phillipa Soo ,Comedy & Romance ,2020
+tt02222042,7,Michael Matthews ,Brian Duffield & Matthew Robinson & Brian Duffield ,Dylan O'Brien & Jessica Henwick & Michael Rooker & Dan Ewing & Ariana Greenblatt ,Action & Adventure & Comedy ,2020
+tt02226162,6.4,Shawn Linden ,Shawn Linden ,Camille Sullivan & Summer H. Howell & Devon Sawa & Nick Stahl & Gabriel Daniels ,Horror & Thriller ,2020
+tt02235695,6,Ben Wheatley ,Jane Goldman & Joe Shrapnel & Anna Waterhouse ,Lily James & Jacques Bouanich & Marie Collins & Ann Dowd & Kristin Scott Thomas ,Drama & Mystery & Romance & Thriller ,2020
+tt02258858,7.5,Haifaa Al-Mansour ,Haifaa Al-Mansour ,Reem Abdullah & Waad Mohammed & Abdullrahman Al Gohani & Ahd & Sultan Al Assaf ,Comedy & Drama ,2012
+tt02702920,5.5,Marc Munden ,Jack Thorne & Frances Hodgson Burnett ,Dixie Egerickx & Richard Hansell & David Verrey & Tommy Gene Surridge & Julie Walters ,Drama & Family & Fantasy ,2020
+tt02709692,6.3,Yarrow Cheney & Scott Mosier ,Michael LeSieur & Tommy Swerdlow & Dr. Seuss ,Benedict Cumberbatch & Cameron Seely & Rashida Jones & Pharrell Williams & Tristan O'Hare ,Animation & Comedy & Family & Fantasy ,2018
+tt02850386,7,Joel Crawford ,Kevin Hageman & Dan Hageman & Paul Fisher ,Nicolas Cage & Emma Stone & Ryan Reynolds & Catherine Keener & Cloris Leachman ,Animation & Adventure & Comedy & Family & Fantasy ,2020
+tt03152592,5.7,Tony Cervone ,Adam Sztykiel & Jack C. Donaldson & Derek Elliott ,Will Forte & Mark Wahlberg & Jason Isaacs & Gina Rodriguez & Zac Efron ,Animation & Adventure & Comedy & Family & Fantasy & Mystery & Sci-Fi ,2020
+tt03278540,5.2,Chris Riedell & Nick Riedell ,Ayn Carrillo Gailey & Andrea Marcellus ,Lucy Hale & Mindy Cohn & Jackie Cruz & Leonidas Gulaptis & Adhir Kalyan ,Comedy & Romance ,2020
+tt03391908,5.6,Guy Pigden ,Guy Pigden ,Guy Pigden & Harley Neville & Peter Coonan & Astra McLaren & Liesha Ward Knox ,Drama & Romance ,2020
+tt03605418,4.9,Eli Roth ,Eli Roth & Nicolás López & Guillermo Amoedo ,Keanu Reeves & Lorenza Izzo & Ana de Armas & Aaron Burns & Ignacia Allamand ,Drama & Thriller ,2015
+tt03608930,6,Ti West ,Ti West ,Ethan Hawke & John Travolta & Taissa Farmiga & James Ransone & Karen Gillan ,Action & Western ,2016
+tt03833480,6.8,Rod Lurie ,Paul Tamasy & Eric Johnson & Jake Tapper ,Scott Eastwood & Caleb Landry Jones & Orlando Bloom & Jack Kesy & Cory Hardrict ,Action & Drama & History & War ,2019
+tt03963816,5.5,Steven C. Miller ,Michael Cody & Chris Sivertson ,Bruce Willis & Christopher Meloni & Dave Bautista & Adrian Grenier & Johnathon Schaech ,Action & Crime & Thriller ,2016
+tt04269310,9,Steve Stanulis ,John Bianco ,Steve Stanulis & Dominique Swain & Brendan Sexton III & DMX & Jack Scalia ,Thriller ,2020
+tt04411584,6.4,Andy Tennant ,Bekah Brunstetter & Andy Tennant & Rick Parks ,Katie Holmes & Josh Lucas & Celia Weston & Jerry O'Connell & Sarah Hoffmeister ,Drama & Romance ,2020
+tt04443658,6.5,Chris Peckover ,Zack Kahn & Zack Kahn & Chris Peckover ,Olivia DeJonge & Levi Miller & Ed Oxenbould & Aleks Mikic & Dacre Montgomery ,Comedy & Crime & Horror & Thriller ,2016
+tt04532038,5.5,Tim Hill ,Tom J. Astle & Matt Ember & Robert Kimmel Smith ,Robert De Niro & Uma Thurman & Rob Riggle & Oakes Fegley & Laura Marano ,Comedy & Drama & Family ,2020
+tt04558376,4.8,Nat Faxon & Jim Rash ,Jesse Armstrong & Nat Faxon & Jim Rash ,Julia Louis-Dreyfus & Will Ferrell & Zach Woods & Zoe Chao & Miranda Otto ,Comedy & Drama ,2020
+tt04566758,5.6,Niki Caro ,Rick Jaffa & Amanda Silver & Lauren Hynek ,Yifei Liu & Donnie Yen & Li Gong & Jet Li & Jason Scott Lee ,Action & Adventure & Drama & Family & Fantasy ,2020
+tt04682266,5.3,Josh Boone ,Josh Boone & Knate Lee ,Maisie Williams & Anya Taylor-Joy & Charlie Heaton & Alice Braga & Blu Hunt ,Action & Horror & Sci-Fi ,2020
+tt04685762,4.3,Zoe Lister-Jones ,Zoe Lister-Jones & Peter Filardi ,Cailee Spaeny & Zoey Luna & Gideon Adlon & Lovie Simone & David Duchovny ,Drama & Fantasy & Horror ,2020
+tt04720702,5.2,Jonathan Milott & Cary Murnion ,Cary Murnion & Jonathan Milott & Nick Damici ,Dave Bautista & Brittany Snow & Angelic Zambrana & Jeremie Harris & Myra Lucretia Taylor ,Action & Thriller ,2017
+tt04729430,8.2,Sergio Pablos & Carlos Martínez López ,Sergio Pablos & Sergio Pablos & Jim Mahoney ,Jason Schwartzman & J.K. Simmons & Rashida Jones & Will Sasso & Neda Margrethe Labba ,Animation & Adventure & Comedy & Family ,2019
+tt04776998,6,Terry George ,Terry George & Robin Swicord ,Oscar Isaac & Charlotte Le Bon & Christian Bale & Daniel Giménez Cacho & Shohreh Aghdashloo ,Action & Adventure & Drama & History & War ,2016
+tt04798836,5.5,Justin Simien ,Justin Simien ,Zaria Kelley & Corinne Massiah & Elle Lorraine & Jay Pharoah & Moses Storm ,Comedy & Horror ,2020
+tt04823776,6,Tim Hill ,Tim Hill & Tim Hill & Jonathan Aibel ,Tim Hill & Clancy Brown & Bill Fagerbakke & Rodger Bumpass & Mr. Lawrence ,Animation & Adventure & Comedy & Family ,2020
+tt04844150,5.4,Rachel Talalay ,Joe Ballarini & Joe Ballarini ,Tamara Smart & Oona Laurence & Tom Felton & Troy Leigh-Anne Johnson & Lynn Masako Cheng ,Comedy & Family & Fantasy ,2020
+tt05073642,6.2,Richard Stanley ,H.P. Lovecraft & Richard Stanley & Scarlett Amaris ,Nicolas Cage & Joely Richardson & Madeleine Arthur & Elliot Knight & Tommy Chong ,Horror & Mystery & Sci-Fi & Thriller ,2019
+tt05097410,6.3,Marc Lawrence ,Marc Lawrence ,Anna Kendrick & Shirley MacLaine & Bill Hader & Kingsley Ben-Adir & Julie Hagerty ,Comedy & Family & Fantasy ,2019
+tt05198068,8.2,Tomm Moore & Ross Stewart ,Jericca Cleland & Will Collins & Tomm Moore ,Honor Kneafsey & Eva Whittaker & Sean Bean & Simon McBurney & Tommy Tiernan ,Animation & Adventure & Family & Fantasy ,2020
+tt05259822,5,Michael Almereyda ,Michael Almereyda ,Ethan Hawke & Eve Hewson & Eli A. Smith & Josh Hamilton & Lucy Walters ,Biography & Drama ,2020
+tt05323662,8.1,Naoko Yamada ,Yoshitoki Oima & Reiko Yoshida & Kiyoshi Shigematsu ,Miyu Irino & Saori Hayami & Aoi Yûki & Kenshô Ono & Yûki Kaneko ,Animation & Drama & Family & Romance ,2016
+tt05354160,9.1,Amitabh Reza Chowdhury ,Syed Gaosul Alam Shaon & Anam Biswas & Adnan Adib Khan ,Chanchal Chowdhury & Masuma Rahman Nabila & Bijori Barkatullah & Amitabh Reza Chowdhury & Heera Chowdhury ,Crime & Mystery & Thriller ,2016
+tt05433114,7.7,Asif Kapadia ,,Diego Maradona & Pelé & Dalma Maradona & Claudia Villafañe & Maria Rosa Maradona ,Documentary & Biography & Sport ,2019
+tt05617312,4.2,Paula van der Oest ,Caroline Goodall & Lisa St Aubin de Terán ,Claes Bang & Olga Kurylenko & Brian Cox & Assaad Bouab & Alice Krige ,Thriller ,2020
+tt05715066,5.8,André Øvredal ,André Øvredal & Norman Lesperance & Geoff Bussetil ,Nat Wolff & Arthur Hakalahti & Priyanka Bose & Iben Akerlie & Ania Nova ,Action & Adventure & Drama & Fantasy ,2020
+tt05774060,5.8,William Eubank ,Brian Duffield & Adam Cozad & Brian Duffield ,Kristen Stewart & Vincent Cassel & Mamoudou Athie & T.J. Miller & John Gallagher Jr. ,Action & Horror & Sci-Fi & Thriller ,2020
+tt05774062,6.5,Brian Duffield ,Brian Duffield & Aaron Starmer ,Katherine Langford & Charlie Plummer & Yvonne Orji & Hayley Law & Piper Perabo ,Comedy & Fantasy & Sci-Fi ,2020
+tt05867314,5.6,David Prior ,David Prior & David Prior & Cullen Bunn ,James Badge Dale & Stephen Root & Joel Courtney & Sasha Frolova & Marin Ireland ,Crime & Drama & Horror & Mystery & Thriller ,2020
+tt05918982,6.5,Brandon Cronenberg ,Brandon Cronenberg ,Gabrielle Graham & Hanneke Talbot & Matthew Garlick & Daniel Park & Andrea Riseborough ,Horror & Sci-Fi & Thriller ,2020
+tt05932728,7.3,Farhad Safinia ,John Boorman & Todd Komarnicki & Farhad Safinia ,Mel Gibson & Sean Penn & Eddie Marsan & Natalie Dormer & Jennifer Ehle ,Biography & Drama ,2019
+tt06017756,6.2,Marjane Satrapi ,Jack Thorne & Lauren Redniss ,Rosamund Pike & Yvette Feuer & Mirjam Novak & Ralph Berkin & Sam Riley ,Biography & Drama & Romance ,2019
+tt06079516,6.8,Adam Randall ,Devon Graye ,Helen Hunt & Jon Tenney & Owen Teague & Judah Lewis & Libe Barer ,Crime & Drama & Horror & Mystery & Thriller ,2019
+tt06218010,4.7,Oleg Stepchenko ,Dmitry Paltsev & Alexey A. Petrukhin & Oleg Stepchenko ,Jason Flemyng & Xingtong Yao & Jackie Chan & Arnold Schwarzenegger & Anna Churina ,Action & Adventure & Family & Fantasy ,2019
+tt06222118,4.4,Ryûhei Kitamura ,Lior Chefetz & Joe Swanson & Greg Williams ,Ruby Rose & Jean Reno & Aksel Hennie & Rupert Evans & Julian Feder ,Action & Thriller ,2020
+tt06269368,6.5,Duncan Skiles ,Christopher Ford ,Dylan McDermott & Charlie Plummer & Samantha Mathis & Madisen Beaty & Brenna Sherman ,Crime & Drama & Mystery & Thriller ,2018
+tt06359956,5.6,Jon Lucas & Scott Moore ,Jon Lucas & Scott Moore ,Mila Kunis & Kristen Bell & Kathryn Hahn & Christine Baranski & Susan Sarandon ,Comedy ,2017
+tt06436726,6.3,Patrick Vollrath ,Patrick Vollrath & Senad Halilbasic ,Joseph Gordon-Levitt & Omid Memar & Aylin Tezel & Carlo Kitzlinger & Murathan Muslu ,Action & Drama & Thriller ,2019
+tt06439020,6.4,Armando Iannucci ,Simon Blackwell & Charles Dickens & Armando Iannucci ,Fisayo Akinade & Nikki Amuka-Bird & Albie Atkinson & Aneurin Barnard & Tuwaine Barrett ,Comedy & Drama ,2019
+tt06456326,5.2,Mark Toia ,Mark Toia ,Neal McDonough & Brett Tutor & Jose Rosete & David Haverty & Paul Haapaniemi ,Sci-Fi ,2020
+tt06473066,7.5,Justin Baldoni ,Kara Holden & Casey La Scala & Patrick Kopka ,Fin Argus & Neve Campbell & Sabrina Carpenter & Madison Iseman & Tom Everett Scott ,Drama & Music ,2020
+tt06475714,5.2,Paul W.S. Anderson ,Paul W.S. Anderson & Kaname Fujioka ,Milla Jovovich & Tony Jaa & T.I. & Meagan Good & Diego Boneta ,Action & Adventure & Fantasy ,2020
+tt06508228,5.5,Eric Bress ,Eric Bress ,Brenton Thwaites & Kyle Gallner & Alan Ritchson & Theo Rossi & Skylar Astin ,Horror & Thriller & War ,2020
+tt06535880,6.3,Scott Beck & Bryan Woods ,Scott Beck & Bryan Woods ,Katie Stevens & Will Brittain & Lauryn Alisa McClain & Andrew Lewis Caldwell & Shazi Raja ,Horror & Thriller ,2019
+tt06598238,5.1,Mitja Okorn ,Jeffrey Addiss & Will Matthews ,Cara Delevingne & Nia Long & Cuba Gooding Jr. & Jaden Smith & Samantha Helt ,Drama & Romance ,2020
+tt06610158,5.9,Jen McGowan ,Julie Lipson & Stu Pollard ,Hermione Corfield & Jay Paulson & Sean O'Bryan & Micah Hauptman & Daniel R. Hill ,Crime & Drama & Thriller ,2018
+tt06656262,7.5,Harsh Gowda ,Harsh Gowda ,Manju Heddur & Saniha Yadav & Pooja Raju & Priyanka Arora & Surya Ninasam ,Comedy & Family & Sci-Fi ,2017
+tt06685476,8.2,Kurt Martin ,Kurt Martin ,Aaron Jeffery & Jessica Napier & David Field & Nicholas Hope & Karina Banno ,Drama ,2020
+tt06723592,7.6,Christopher Nolan ,Christopher Nolan ,Juhan Ulfsak & Jefferson Hall & Ivo Uukkivi & Andrew Howard & John David Washington ,Action & Sci-Fi ,2020
+tt06772802,6.7,Ron Howard ,J.D. Vance & Vanessa Taylor ,Amy Adams & Glenn Close & Gabriel Basso & Haley Bennett & Freida Pinto ,Drama ,2020
+tt06774786,5,Luke Sparke ,Luke Sparke & Felix Williamson ,Dan Ewing & Temuera Morrison & Stephany Jacobsen & Rhiannon Fish & Zac Garred ,Action & Drama & Sci-Fi ,2018
+tt06803046,6.7,Andrew Patterson ,Andrew Patterson & Craig W. Sanger ,Sierra McCormick & Jake Horowitz & Gail Cronauer & Bruce Davis & Cheyenne Barton ,Drama & Mystery & Sci-Fi & Thriller ,2019
+tt06833470,2.9,Matt Shapira ,Christopher Hewitson & Clayton Hewitson & Justin Jones ,Chord Overstreet & Olivia Culpo & Luke Wilson & Aleksander Vayshelboym & Adelaide Kane ,Comedy ,2020
+tt06841122,6.9,Jessica Swale ,Jessica Swale ,Gemma Arterton & Gugu Mbatha-Raw & Penelope Wilton & Tom Courtenay & Lucas Bond ,Drama & Romance & War ,2020
+tt06841828,3.3,Vincent Woods ,Jayney Mackie ,Joan Collins & Luke Goss & Martin Kemp & Guy Siner & Vas Blackwood ,Comedy & Drama ,2020
+tt06842770,5.4,John Patrick Shanley ,John Patrick Shanley & John Patrick Shanley ,Dearbhla Molloy & Don Wycherley & Clare Barrett & Darragh O'Kane & Abigail Coburn ,Drama & Romance ,2020
+tt06850820,6.5,Pierre Morel ,Chad St. John ,Jennifer Garner & John Gallagher Jr. & John Ortiz & Juan Pablo Raba & Annie Ilonzeh ,Action & Drama & Thriller ,2018
+tt06865630,5.7,Charles McDougall ,Cris Cole & Charles McDougall & Luillo Ruiz ,Andy Garcia & Dafne Keen & Jeanne Tripplehorn & Luna Lauren Velez & Ramón Franco ,Comedy & Drama ,2020
+tt06882604,6.3,Gavin Rothery ,Gavin Rothery ,Theo James & Stacy Martin & Rhona Mitra & Peter Ferdinando & Lia Williams ,Drama & Sci-Fi & Thriller ,2020
+tt06918740,8.7,Justin Robinson ,Justin Robinson ,Jim Grimes & Jordan Robinson & Justin Robinson ,Documentary ,2020
+tt06988208,4.4,Alex Merkin ,Neil Elman ,Emily Bader & Darren Mann & Michelle Randolph & Arden Belle & Coy Stewart ,Fantasy & Horror & Mystery & Thriller ,2017
+tt07052270,5.4,Giles Alderson ,Giles Alderson & Simon Cotton & Simon Cotton ,Richard Short & Tim Fellingham & Stella Stocker & Sanna Kelly & Joe Egan ,Action & Adventure & History ,2020
+tt07057496,7.4,Hang-jun Jang ,Hang-jun Jang ,Kang Ha-Neul & Yeon Je Hyung & Mu-Yeol Kim & Na-ra Lee & Seong-kun Mun ,Horror & Mystery & Thriller ,2017
+tt07126948,5.6,Patty Jenkins ,Patty Jenkins & Geoff Johns & Patty Jenkins ,Gal Gadot & Chris Pine & Kristen Wiig & Pedro Pascal & Robin Wright ,Action & Adventure & Fantasy ,2020
+tt07134096,5.3,Reed Morano ,Mark Burnell & Mark Burnell ,Blake Lively & Richard Brake & Elly Curtis & David Duggan & Matilda Ziegler ,Action & Drama & Mystery & Thriller ,2020
+tt07139936,6.5,Woody Allen ,Woody Allen ,Timothée Chalamet & Elle Fanning & Liev Schreiber & Suzanne Smith & Olivia Boreham-Wing ,Comedy & Romance ,2019
+tt07141096,6.5,Woody Allen ,Woody Allen ,Timothée Chalamet & Elle Fanning & Liev Schreiber & Suzanne Smith & Olivia Boreham-Wing ,Comedy & Romance ,2019
+tt07149730,6.1,Robin Pront ,Micah Ranum ,Nikolaj Coster-Waldau & Caleb Ellsworth-Clark & Josh Cruddas & Annabelle Wallis & Zahn McClarnon ,Action & Crime & Thriller ,2020
+tt07178640,5.3,Ben Falcone ,Steve Mallory ,Melissa McCarthy & James Corden & Bobby Cannavale & Brian Tyree Henry & Sam Richardson ,Comedy & Romance & Sci-Fi ,2020
+tt07212754,7.6,Anurag Basu ,Anurag Basu & Samrat Chakraborty & Sayef Turan ,Pankaj Tripathi & Abhishek Bachchan & Rajkummar Rao & Fatima Sana Shaikh & Aditya Roy Kapoor ,Action & Comedy & Crime & Drama ,2020
+tt07395114,7.1,Antonio Campos ,Antonio Campos & Paulo Campos & Donald Ray Pollock ,Donald Ray Pollock & Bill Skarsgård & Tom Holland & Michael Banks Repeta & Emilio Subercaseaux Campos ,Crime & Drama & Thriller ,2020
+tt07488208,6.5,Glen Keane & John Kahrs ,Audrey Wells & Jennifer Yee McDevitt & Alice Wu ,Glen Keane & Brycen Hall & Ruthie Ann Miles & John Cho & Cathy Ang ,Animation & Adventure & Comedy & Family & Fantasy & Musical & Sci-Fi ,2020
+tt07541106,5.8,David Marmor ,David Marmor ,Nicole Brydon Bloom & Giles Matthey & Taylor Nichols & Alan Blumenfeld & Naomi Grossman ,Drama & Horror & Thriller ,2019
+tt07557108,7.1,Rose Glass ,Rose Glass ,Morfydd Clark & Jennifer Ehle & Lily Knight & Lily Frazer & Turlough Convery ,Drama & Horror & Mystery ,2019
+tt07711170,6.1,John Hyams ,Mattias Olsson ,Jules Willcox & Marc Menchaca & Anthony Heald & Jonathan Rosenthal & Katie O'Grady ,Drama & Thriller ,2020
+tt07736496,6.5,David E. Talbert ,David E. Talbert ,Forest Whitaker & Keegan-Michael Key & Hugh Bonneville & Anika Noni Rose & Madalen Mills ,Family & Fantasy & Musical ,2020
+tt07737786,6.4,Ric Roman Waugh ,Chris Sparling ,Gerard Butler & Morena Baccarin & Roger Dale Floyd & Scott Glenn & Randal Gonzalez ,Action & Drama & Thriller ,2020
+tt07772582,7.4,Eliza Hittman ,Eliza Hittman ,Eliazar Jimenez & David Buneta & Christian Clements & Sam Dugger & Talia Ryder ,Drama ,2020
+tt07805960,5.4,Girish Malik ,Bharti Jakhar & Girish Malik & Mohammad Muneem ,Sanjay Dutt & Nargis Fakhri & Rahul Dev & Babrak Akbari & Diwakar Dhayani ,Action & Drama & Sport & Thriller ,2020
+tt07846844,6.6,Harry Bradbeer ,Jack Thorne & Nancy Springer ,Millie Bobby Brown & Henry Cavill & Sam Claflin & Helena Bonham Carter & Louis Partridge ,Action & Adventure & Crime & Drama & Mystery ,2020
+tt07873348,5.5,Alex Huston Fischer & Eleanor Wilson ,Alex Huston Fischer & Eleanor Wilson ,Sunita Mani & John Reynolds & Ben Sinclair & John Early & Jo Firestone ,Comedy & Sci-Fi ,2020
+tt07923220,5.5,Vaughn Stein ,Matthew Kennedy ,Lily Collins & Simon Pegg & Connie Nielsen & Chace Crawford & Patrick Warburton ,Drama & Mystery & Thriller ,2020
+tt07939766,6.6,Charlie Kaufman ,Charlie Kaufman & Iain Reid ,Jesse Plemons & Jessie Buckley & Toni Collette & David Thewlis & Guy Boyd ,Drama & Thriller ,2020
+tt07946422,6.3,Christopher Caldwell & Zeek Earl ,Christopher Caldwell & Zeek Earl ,Sophie Thatcher & Jay Duplass & Pedro Pascal & Luke Pitzrick & Arthur Deranleau ,Drama & Sci-Fi & Thriller & Western ,2018
+tt07978672,4.5,Andrew Traucki ,John Ridley & Sarah Smith ,Jessica McNamee & Luke Mitchell & Amali Golden & Benjamin Hoetjes & Anthony J. Sharpe ,Action & Drama & Horror ,2020
+tt07983894,6.5,Francis Lee ,Francis Lee ,Sarah White & Liam Thomas & Sam Parks & Kate Winslet & Gemma Jones ,Biography & Drama & Romance ,2020
+tt08004664,5.7,Jacob Chase ,Jacob Chase ,Azhy Robertson & Gillian Jacobs & John Gallagher Jr. & Winslow Fegley & Jayden Marine ,Drama & Horror & Mystery & Thriller ,2020
+tt08009906,5.9,Damien LeVeck ,Damien LeVeck & Aaron Horwitz & Aaron Horwitz ,Ryan Guzman & Kyle Gallner & Alix Angelis & Chris Lew Kum Hoi & Daniel Hoffmann-Gill ,Horror ,2019
+tt08009938,5.3,Justin Dix ,Justin Dix & Jordan Prosser ,Nathan Phillips & Alyssa Sutherland & Robert Taylor & Christopher Kirby & Alex Cooke ,Horror ,2019
+tt08010336,4.5,Andrew Traucki ,John Ridley & Sarah Smith ,Jessica McNamee & Luke Mitchell & Amali Golden & Benjamin Hoetjes & Anthony J. Sharpe ,Action & Drama & Horror ,2020
+tt08016356,6.6,Karthik Saragur ,Karthik Saragur ,Aravinnd Iyer & Achyuth Kumar & Arohi Narayan & Priyanka Thimmesh & Punith Achar ,Drama ,2020
+tt08017136,8,Vipul K. Rawal ,Vipul K. Rawal ,Yashodhan Rana & Akshay Verma & Manoj Chandila & Mahesh Jilowa & Dhruv Souran ,Thriller ,2018
+tt08045906,6.9,Thor Freudenthal ,Nick Naveda & Julia Walton ,Charlie Plummer & Andy Garcia & Taylor Russell & AnnaSophia Robb & Beth Grant ,Drama & Romance ,2020
+tt08109470,5.8,Henk Pretorius ,Henk Pretorius & Jennifer Nicole Stang ,Jemima West & Christopher Dane & Rebecca Hanssen & Harry McMillan-Hunt & Rachel Lin ,Horror & Thriller ,2020
+tt08116640,5.9,Owen Trevor ,Steve Worland ,Frances O'Connor & Richard Roxburgh & Dan Wyllie & Cooper van Grootel & Damian de Montemas ,Family & Sport ,2020
+tt08143990,6.4,Miranda July ,Miranda July ,Evan Rachel Wood & Patricia Belcher & Kim Estes & Da'Vine Joy Randolph & Rachel Redleaf ,Crime & Drama ,2020
+tt08160834,5.4,Will Wernick ,Will Wernick ,Keegan Allen & Holland Roden & Denzel Whitaker & Ronen Rubinstein & Pasha D. Lychnikoff ,Adventure & Horror & Thriller ,2020
+tt08170298,3.5,Will Forbes ,Will Forbes & Doug Skinner ,Terry Crews & Jamila Velazquez & Ludacris & Ken Foree & Joseph Julian Soria ,Drama & Thriller ,2020
+tt08201852,5.3,David Koepp ,David Koepp & Daniel Kehlmann ,Kevin Bacon & Amanda Seyfried & Avery Tiiu Essex & Colin Blumenau & Lowri Ann Richards ,Drama & Horror & Mystery & Thriller ,2020
+tt08215480,6.1,Dana Ziyasheva ,Dana Ziyasheva ,Shannon Briggs & Nhya Cedon & Ellen Clifford & Camille Curtis & Arman Darbo ,Fantasy & Sci-Fi ,2020
+tt08244784,6.5,Craig Zobel ,Nick Cuse & Damon Lindelof ,Betty Gilpin & Hilary Swank & Ike Barinholtz & Wayne Duvall & Ethan Suplee ,Action & Horror & Thriller ,2020
+tt08305806,5.8,Brett Pierce & Drew T. Pierce ,Brett Pierce & Drew T. Pierce ,John-Paul Howard & Piper Curda & Jamison Jones & Azie Tesfai & Zarah Mahler ,Horror ,2019
+tt08327630,3.5,Michael Ballif ,Michael Ballif & Michael Ballif & James Morris ,James Morris & Hailey Nebeker & Stevie Dust & Emily Broschinsky & Emily Ashby ,Horror ,2020
+tt08338762,6.4,Sean Durkin ,Sean Durkin ,Jude Law & Carrie Coon & Oona Roche & Charlie Shotwell & Tanya Allen ,Drama & Romance ,2020
+tt08354752,5.5,Mark Amin ,Mark Amin & Pat Charles ,Kat Graham & James Cromwell & M.C. Gainey & Bruce Dern & Mykelti Williamson ,Action & Biography & Drama & History ,2020
+tt08362228,6.3,Brett Hedlund ,Carl Morris & David Michael O'Neill ,Jacqueline Toboni & Michael O'Neill & Tyler Jacob Moore & Christopher McDonald & Sean O'Bryan ,Thriller ,2020
+tt08368406,5.8,Lorcan Finnegan ,Lorcan Finnegan & Garret Shanley & Garret Shanley ,Imogen Poots & Danielle Ryan & Molly McCann & Jesse Eisenberg & Jonathan Aris ,Comedy & Horror & Mystery & Sci-Fi ,2019
+tt08372298,6.4,Carlo Mirabella-Davis ,Carlo Mirabella-Davis ,Haley Bennett & Austin Stowell & Denis O'Hare & Elizabeth Marvel & David Rasche ,Drama & Mystery & Thriller ,2019
+tt08461224,4.7,David Ayer ,David Ayer ,Bobby Soto & Cinthya Carmona & Shia LaBeouf & Jose Conejo Martin & Cheyenne Rae Hernandez ,Action & Crime & Drama & Thriller ,2020
+tt08484160,6.3,Ashley Avis ,Ashley Avis & Anna Sewell ,Kate Winslet & Mackenzie Foy & Iain Glen & Calam Lynch & Claire Forlani ,Drama & Family ,2020
+tt08508734,6.5,Remi Weekes ,Remi Weekes & Felicity Evans & Toby Venables ,Sope Dirisu & Wunmi Mosaku & Malaika Wakoli-Abigaba & Matt Smith & Javier Botet ,Drama & Horror & Thriller ,2020
+tt08522006,6.7,Clea DuVall ,Clea DuVall & Clea DuVall & Mary Holland ,Kristen Stewart & Mackenzie Davis & Mary Steenburgen & Victor Garber & Alison Brie ,Comedy & Drama & Romance ,2020
+tt08618654,8.3,Joshua Tickell & Rebecca Harrell Tickell ,Johnny O'Hara & Joshua Tickell & Rebecca Harrell Tickell ,Woody Harrelson & Ray Archuleta & John Wick & Kristin Ohlson & Kristine Nichols ,Documentary ,2020
+tt08623904,6.5,Paul Feig ,George Michael & Emma Thompson & Greg Wise ,Madison Ingoldsby & Emma Thompson & Boris Isakovic & Lucy Miller & Emilia Clarke ,Comedy & Drama & Romance ,2019
+tt08633478,6.7,Aneesh Chaganty ,Aneesh Chaganty & Sev Ohanian ,Sarah Paulson & Kiera Allen & Sara Sohn & Pat Healy & Erik Athavale ,Horror & Mystery & Thriller ,2020
+tt08633748,6,Steve Byrne ,Steve Byrne ,Jimmy O. Yang & Alex Moffat & Cedric the Entertainer & Bill Burr & Neal Brennan ,Comedy ,2020
+tt08675288,4.8,Cory Edwards ,Cory Edwards & John Paul Murphy ,Yara Shahidi & Miles Robbins & Miguel & Jadakiss & Susan Sarandon ,Animation & Comedy & Family & Sci-Fi ,2020
+tt08709044,5.7,David J. Espinosa ,Craig Ahrens & David J. Espinosa & David J. Espinosa ,Jeff Hatch & Maria Olsen & Chelsea Jurkiewicz & Anton Clark & David J. Espinosa ,Horror & Thriller ,2020
+tt08721556,7.6,Lijo Jose Pellissery ,R. Jayakumar & Hareesh S. ,Antony Varghese & Chemban Vinod Jose & Sabumon Abdusamad & Santhy Balachandran & Jaffer Idukki ,Action & Crime ,2019
+tt08747560,8.6,Madhumita Sundararaman ,Madhumita Sundararaman ,Yog Japee & Nagavishal & Mu Ramaswamy ,Drama ,2019
+tt08784956,5.4,Tate Taylor ,Matthew Newton ,Jessica Chastain & John Malkovich & Common & Geena Davis & Jess Weixler ,Action & Crime & Drama & Thriller ,2020
+tt08850222,5.4,Sang-ho Yeon ,Sang-ho Yeon & Ryu Yong-jae ,Dong-won Gang & Lee Jung-hyun & Re Lee & Hae-hyo Kwon & Min-Jae Kim ,Action & Adventure & Horror ,2020
+tt08910408,8.2,Arman Nshanian ,Audrey Gevorkian & Sylvia Kavoukjian ,Samvel Tadevosian & Arman Nshanian & Sos Janibekyan & Arevik Gevorgyan & Tatev Hovakimyan ,Drama ,2020
+tt08945942,4.4,Brendan Walsh ,Daley Nixon & Daley Nixon & Brendan Walsh ,Mavis Simpson-Ernst & Vincent Piazza & Genesis Rodriguez ,Drama & Thriller ,2020
+tt08949056,6.1,Karen Maine ,Karen Maine ,Natalia Dyer & Timothy Simons & Wolfgang Novogratz & Francesca Reale & Susan Blackwell ,Comedy & Drama ,2019
+tt08972556,3.5,Ross Boyask ,Ross Boyask ,Stu Bennett & Vinnie Jones & Jacob Anderton & Sam Benjamin & Lainy Boyle ,Action ,2020
+tt08976576,5.5,Osmany Rodriguez ,Osmany Rodriguez & Osmany Rodriguez & Blaise Hemingway ,Jaden Michael & Gerald Jones III & Gregory Diaz IV & Sarah Gadon & Method Man ,Comedy & Horror ,2020
+tt08983164,6.5,Hansal Mehta ,Aseem Arrora & Sumeet Bishnoi & Zeishan Quadri ,Rajkummar Rao & Nushrat Bharucha & Mohd. Zeeshan Ayyub & Saurabh Shukla & Satish Kaushik ,Comedy & Drama ,2020
+tt08997712,5.2,Edward Drake ,Edward Drake & Piper Mars ,Jonathan Lipnicki & Avery Konrad & Timothy V. Murphy & Corey Large & Annette Reilly ,Fantasy & Horror & Thriller ,2020
+tt09059704,5.7,Brandon Trost ,Simon Rich & Simon Rich ,Seth Rogen & Sarah Snook & Molly Evensen & Eliot Glazer & Kalen Allen ,Comedy ,2020
+tt09071322,7.6,Todd Haynes ,Nathaniel Rich & Mario Correa & Matthew Michael Carnahan ,Mark Ruffalo & Anne Hathaway & Tim Robbins & Bill Pullman & Bill Camp ,Biography & Drama & History & Thriller ,2019
+tt09072352,5.9,Natalie Erika James ,Natalie Erika James & Christian White ,Robyn Nevin & Emily Mortimer & Bella Heathcote & Steve Rodgers & Chris Bunton ,Drama & Horror & Mystery & Thriller ,2020
+tt09110340,7.7,V. Vignarajan ,V. Vignarajan ,Vinoth Kishan & Arjun Das & Pooja Ramachandran & Kumar Natarajan & Misha Ghoshal ,Horror & Mystery & Thriller ,2020
+tt09112712,3.9,Mike Mosallam ,Mike Mosallam ,Haaz Sleiman & Michael Cassidy & Amin El Gamal & Patrick Sabongui & Christopher J. Hanke ,Comedy & Drama ,2020
+tt09118804,4.6,B. Harrison Smith ,James Newman & Mark Steensland ,Davy Raphaely & Dave Sheridan & Sarah French & Doug Henderson & Susan Moses ,Horror ,2020
+tt09129166,5.9,Azfar Jafri ,Nomaan Khan ,Mikaal Zulfiqar & Armeena Rana Khan & Sabeeka Imam & Hassan Niazi & Ibrahim Alavi ,Action & Drama & Romance ,2019
+tt09139586,6,Clark Duke ,Clark Duke & Andrew Boonkrong & John Brandon ,Liam Hemsworth & Jacob Zachar & Patrick Muldoon & Clark Duke & John Malkovich ,Crime & Drama & Thriller ,2020
+tt09173418,4.6,William Brent Bell ,Stacey Menear & Stacey Menear ,Katie Holmes & Christopher Convery & Owain Yeoman & Ralph Ineson & Daphne Hoskins ,Drama & Horror & Mystery & Thriller ,2020
+tt09178402,4.6,Aaron B. Koontz ,Cameron Burns & Aaron B. Koontz & Keith Lansdale ,Melora Walters & Stan Shaw & Zachary Knighton & Noah Segan & Pat Healy ,Drama & Horror & Western ,2020
+tt09196192,3.1,Maïmouna Doucouré ,Maïmouna Doucouré ,Fathia Youssouf & Médina El Aidi-Azouni & Esther Gohourou & Ilanah Cami-Goursolas & Myriam Hamma ,Drama ,2020
+tt09214832,6.7,Autumn de Wilde ,Eleanor Catton & Jane Austen ,Anya Taylor-Joy & Angus Imrie & Letty Thomas & Gemma Whelan & Bill Nighy ,Comedy & Drama & Romance ,2020
+tt09231040,7.1,Kelly Reichardt ,Jonathan Raymond & Jonathan Raymond & Kelly Reichardt ,Alia Shawkat & John Magaro & Dylan Smith & Ryan Findley & Clayton Nemrow ,Drama ,2019
+tt09264728,4.6,Braden R. Duemmler ,Braden R. Duemmler ,Ema Horvath & Troy Iwata & Danny Corbo & Mena Suvari & Trey Tucker ,Horror & Mystery & Sci-Fi & Thriller ,2020
+tt09302994,5.8,Michael Feifer ,Michael Feifer ,Neal Bledsoe & Rob Mayes & Savannah Judy & Luke Judy & AnnaLynne McCord ,Western ,2020
+tt09340860,6.7,Thomas Bezucha ,Thomas Bezucha & Larry Watson ,Diane Lane & Kevin Costner & Kayli Carter & Ryan Bruce & Otto Hornung ,Crime & Drama & Thriller ,2020
+tt09363342,3.1,John Giorgio ,Michelle Lewis ,Troy Fromin & Jimmy Ace Lewis & Matthew Ewald & Triston Dye & J. Gaven Wilde ,Horror & Mystery & Thriller ,2020
+tt09387250,4.7,Liam O'Donnell ,Matthew E. Chausse & Joshua Cordes & Liam O'Donnell ,Lindsey Morgan & Jonathan Howard & Daniel Bernhardt & Rhona Mitra & James Cosmo ,Action & Adventure & Sci-Fi ,2020
+tt09411866,5.1,Sally Potter ,Sally Potter ,Javier Bardem & Elle Fanning & Branka Katic & Salma Hayek & Dimitri Andreas ,Drama ,2020
+tt09419976,5.4,Alastair Orr ,David D. Jones ,Reine Swart & Russell Crous & Liesl Ahlers & Cameron Scott & Steven John Ward ,Action & Comedy & Horror & Thriller ,2020
+tt09441638,6,Scott Wiper ,Scott Wiper & Scott Wiper & Paul Tarantino ,Vinnie Jones & Malcolm McDowell & Ron Perlman & Nicholas Braun & Leven Rambin ,Drama ,2020
+tt09465600,4.6,John Suits ,Ryan Binaco ,Omar Epps & Kate Walsh & Angus Macfadyen & Jorja Fox & Miranda Cosgrove ,Sci-Fi ,2019
+tt09484998,7.4,Max Barbakow ,Andy Siara ,Andy Samberg & Cristin Milioti & J.K. Simmons & Peter Gallagher & Meredith Hagner ,Comedy & Fantasy & Mystery & Romance ,2020
+tt09542116,3.4,David Liban ,David Liban ,Caleb Liban & Danielle Prall & Timothy McCracken & Vivienne Bersin & Kaden Hinkle ,Drama & Sci-Fi ,2020
+tt09543062,5.3,Adam Leader & Richard Oakes ,Adam Leader & Adam Leader & Richard Oakes ,Neal Ward & Nadia Lamin & Frank Jakeman & Sandra Howard-Williams & Lee Hunter ,Horror ,2020
+tt09601220,6.5,Lawrence Michael Levine ,Lawrence Michael Levine ,Aubrey Plaza & Sarah Gadon & Christopher Abbott & Lindsay Burdge & Alexander Koch ,Comedy & Drama ,2020
+tt09605894,3.8,Hemant Madhukar ,Hemant Madhukar & Kona Venkat ,Anushka Shetty & Madhavan & Anjali & Michael Madsen & Subbaraju ,Horror & Mystery & Thriller ,2020
+tt09606374,6.5,Sofia Coppola ,Sofia Coppola ,Bill Murray & Rashida Jones & Marlon Wayans & Jessica Henwick & Jenny Slate ,Comedy & Drama & Romance ,2020
+tt09624766,2.9,Dimitri Logothetis ,Dimitri Logothetis & Jim McGrath ,Alain Moussi & Nicolas Cage & Raymond Pinharry & Mary Makariou & Tommy Walker ,Action & Sci-Fi ,2020
+tt09625664,4.5,Matt Eskandari ,Paul Da Silva ,Nicky Whelan & Bruce Willis & Tito Ortiz & Texas Battle & Catherine Davis ,Action & Thriller ,2019
+tt09640414,3.7,Jesse Low ,DJ Perry ,Melissa Anschutz & Don Most & Victoria Jackson & Christine Marie & Josh Perry ,Comedy & Drama & Mystery ,2020
+tt09686708,7.1,Judd Apatow ,Judd Apatow & Pete Davidson & Dave Sirus ,Pete Davidson & Bel Powley & Ricky Velez & Lou Wilson & Moises Arias ,Comedy & Drama ,2020
+tt09689696,5,April Mullen ,Tim Doiron ,Aaron Eckhart & Tommy Lee Jones & Katheryn Winnick & Heather Graham & Raymond Cruz ,Thriller ,2020
+tt09695722,4.6,Stanley Tong ,Stanley Tong & Tiffany Alycia Tong ,Jackie Chan & Yang Yang & Lun Ai & Miya Muqi & Ruohan Xu ,Action ,2020
+tt09708358,9,Justin Malone ,Ryder Ansell & Larry Elder & Justin Malone ,Chad Jackson & Brandon Tatum & Candace Owens & Larry Elder & Jesse Lee Peterson ,Documentary ,2020
+tt09735976,5.4,Shaun Paul Piccinino ,John Ducey ,Matt Jones & Jeff Fahey & Noureen DeWulf & John Ducey & Matty Cardarople ,Comedy ,2020
+tt09766310,6.2,Ashish Aryan ,Ashish Aryan ,Aparshakti Khurana & Divyendu Sharma & Vijay Raaz & Rajshri Deshpande & Harshita Gaur ,Drama ,2019
+tt09794630,5.7,Peter Facinelli ,Peter Facinelli ,Anne Heche & Thomas Jane & Jason Patric & Alex Haydon & Peter Facinelli ,Action & Mystery & Thriller ,2020
+tt09806370,4.8,Julius Berg ,Mathieu Gompel & Julius Berg & Geoff Cox ,Maisie Williams & Sylvester McCoy & Rita Tushingham & Jake Curran & Andrew Ellis ,Action & Horror & Thriller ,2020
+tt09820556,3,John Suits ,Edward Drake & Corey Large ,Cody Kearsley & Bruce Willis & Rachel Nichols & Kassandra Clementi & Johnny Messner ,Action & Sci-Fi ,2020
+tt09866072,6.1,John Whitesell ,Tiffany Paulsen ,Emma Roberts & Luke Bracey & Kristin Chenoweth & Frances Fisher & Andrew Bachelor ,Comedy & Romance ,2020
+tt09900782,8.5,Lokesh Kanagaraj ,Lokesh Kanagaraj & Pon Parthiban ,Karthi & Narain & Ramana & George Maryan & Harish Uthaman ,Action & Thriller ,2019
+tt09916190,3.2,Fraser Precious ,Fraser Precious ,Patrick Gallagher & Akie Kotabe & Sean Cronin & Takayuki Suzuki & Andrei Nova ,Action & Adventure & Thriller ,2020
+tt10003008,5.7,Dave Franco ,Dave Franco & Joe Swanberg & Dave Franco ,Dan Stevens & Alison Brie & Sheila Vand & Jeremy Allen White & Toby Huss ,Horror & Thriller ,2020
+tt10039344,5.4,Justin Dec ,Justin Dec ,Elizabeth Lail & Jordan Calloway & Talitha Eliana Bateman & Peter Facinelli & Dillon Lane ,Horror & Thriller ,2019
+tt10054316,4.4,Sam Macaroni ,Sean Bishop & Troy Duffy & Sam Macaroni ,Pauly Shore & Mike Castle & Aimee Teegarden & Billy Zane & Bobby Lee ,Comedy ,2020
+tt10059518,6,Derrick Borte ,Carl Ellsworth ,Russell Crowe & Caren Pistorius & Gabriel Bateman & Jimmi Simpson & Austin P. McKenzie ,Action & Thriller ,2020
+tt10065694,5.6,Gerard Bush & Christopher Renz ,Gerard Bush & Christopher Renz ,Arabella Landrum & Jena Malone & Eric Lange & Janelle Monáe & Tongayi Chirisa ,Drama & Horror & Mystery & Thriller ,2020
+tt10081762,6.1,Joachim Hedén ,Joachim Hedén ,Moa Gammel & Madeleine Martin & Trine Wiggen & Jitse Jonathan Buitnik & Remi Alashkar ,Action & Drama & Thriller ,2020
+tt10126434,5.7,Josh Ruben ,Josh Ruben ,Josh Ruben & Aya Cash & Chris Redd & Rebecca Drysdale & Lauren Sick ,Comedy & Horror ,2020
+tt10127684,6.1,Olivier Marchal ,Olivier Marchal ,Lannick Gautry & Stanislas Merhar & Kaaris & David Belle & Patrick Catalifo ,Action & Crime & Drama & Thriller ,2020
+tt10151054,5.3,Scott Teems ,Scott Teems & Andrew Brotzman & Damon Galgut ,Bruno Bichir & Shea Whigham & Catalina Sandino Moreno & Anna Watt & Alvaro Martinez ,Crime & Mystery & Thriller ,2020
+tt10161886,6.1,Ryan Murphy ,Bob Martin & Chad Beguelin & Chad Beguelin ,Meryl Streep & James Corden & Nicole Kidman & Kerry Washington & Keegan-Michael Key ,Comedy & Drama & Musical ,2020
+tt10189514,8.7,Sudha Kongara ,Sudha Kongara & Shalini Ushadevi & Sudha Kongara ,Suriya & Paresh Rawal & Aparna Balamurali & Vinodhini Vaidynathan & Urvashi ,Drama ,2020
+tt10192566,4.8,Johnny Martin ,Matt Naylor ,Tyler Posey & Summer Spiro & Donald Sutherland & Robert Ri'chard & John Posey ,Horror & Thriller ,2020
+tt10199914,6.8,Joe Mantello ,Mart Crowley & Ned Martel & Mart Crowley ,Jim Parsons & Zachary Quinto & Matt Bomer & Andrew Rannells & Charlie Carver ,Drama ,2020
+tt10223876,2.4,Alexander T. Hwang ,Richard J. Aguirre & Alexander T. Hwang ,Brooklyn Haley & Nicole Cinaglia & Hunter Johnson & Eden Shea Beck & Jennifer Nangle ,Horror ,2020
+tt10229558,6.1,Bryan Bertino ,Bryan Bertino ,Marin Ireland & Michael Abbott Jr. & Julie Oliver-Touchstone & Lynn Andrews & Tom Nowicki ,Horror ,2020
+tt10230414,6.8,Sudhir Mishra ,Niren Bhatt & Manu Joseph & Abhijeet Khuman ,Nawazuddin Siddiqui & Nassar & Aakshath Das & Indira Tiwari & Sanjay Narvekar ,Comedy & Drama ,2020
+tt10235600,3.4,Terrie Samundra ,Rupinder Inderjit & David Walter Lech & Terrie Samundra ,Shabana Azmi & Sanjeeda Sheikh & Satyadeep Misra & Riva Arora & Jatinder Kaur ,Drama & Horror & Mystery & Thriller ,2020
+tt10243992,6.1,Julia Hart ,Julia Hart & Jordan Horowitz ,Rachel Brosnahan & Marsha Stephanie Blake & Arinzé Kene & Jameson Charles & Justin Charles ,Crime & Drama ,2020
+tt10288566,7.9,Thomas Vinterberg ,Thomas Vinterberg & Tobias Lindholm ,Mads Mikkelsen & Thomas Bo Larsen & Magnus Millang & Lars Ranthe & Maria Bonnevie ,Comedy & Drama ,2020
+tt10303324,4.7,Matt Eskandari ,Doug Wolfe ,Bruce Willis & Chad Michael Murray & Shea Buckner & Tyler Jon Olson & Lydia Hull ,Action & Drama & Thriller ,2020
+tt10309552,5.3,Brea Grant ,Brea Grant ,Angela Bettis & David Arquette & Chloe Farnworth & Mick Foley & Kit Williamson ,Comedy & Horror & Thriller ,2020
+tt10310140,5.9,Eshom Nelms & Ian Nelms ,Ian Nelms & Eshom Nelms ,Mel Gibson & Walton Goggins & Marianne Jean-Baptiste & Chance Hurstfield & Susanne Sutchy ,Action & Comedy & Fantasy & Thriller ,2020
+tt10350922,2.3,Lawrence Raghavendra & Balakrishnan Thevar ,Farhad Samji & Farhad Samji & Lawrence Raghavendra ,Akshay Kumar & Kiara Advani & Sharad Kelkar & Ashwini Kalsekar & Ayesha Raza ,Action & Comedy & Horror ,2020
+tt10362466,5,Roger Kumble ,Anna Todd & Mario Celaya & Anna Todd ,Josephine Langford & Hero Fiennes Tiffin & Dylan Sprouse & Louise Lombard & Shane Paul McGhie ,Drama & Romance ,2020
+tt10394738,7.8,Nathan Grossman ,Hanna Lejonqvist & Per K. Kirkegaard & Olof Berglind ,Greta Thunberg & Malena Ernman & Pope Francis & António Guterres & Jean-Claude Juncker ,Documentary & Biography ,2020
+tt10481868,3.3,Sophia Takal ,Sophia Takal & April Wolfe ,Imogen Poots & Aleyse Shannon & Lily Donoghue & Brittany O'Grady & Caleb Eberhardt ,Horror & Mystery & Thriller ,2019
+tt10514222,7.2,George C. Wolfe ,Ruben Santiago-Hudson & August Wilson ,Viola Davis & Chadwick Boseman & Colman Domingo & Glynn Turman & Michael Potts ,Drama & Music ,2020
+tt10530176,7.1,Chung-Hyun Lee ,Sergio Casci & Chung-Hyun Lee ,Park Shin-Hye & Jong-seo Jun & Sung-ryung Kim & El Lee & Park Ho-San ,Crime & Horror & Mystery & Thriller ,2020
+tt10539608,5.6,George Clooney ,Lily Brooks-Dalton & Mark L. Smith ,George Clooney & Felicity Jones & David Oyelowo & Caoilinn Springall & Kyle Chandler ,Drama & Fantasy & Sci-Fi & Thriller ,2020
+tt10543680,5.6,Puneet Khanna ,Sumit Arora & Navjot Gulati ,Yami Gautam & Vikrant Massey & Ayesha Raza & Rajiv Gupta & Maneka Kurup Arora ,Comedy & Romance ,2020
+tt10618286,7.2,David Fincher ,Jack Fincher ,Gary Oldman & Amanda Seyfried & Lily Collins & Tom Pelphrey & Arliss Howard ,Biography & Comedy & Drama ,2020
+tt10620868,6.2,Il Cho ,Il Cho & Matt Naylor ,Yoo Ah-In & Park Shin-Hye & Jeon Bae-soo & Hyun-Wook Lee & Hye-Won Oh ,Action & Drama & Horror & Thriller ,2020
+tt10627548,5.2,Debbie Allen ,Dolly Parton & Maria S. Schlatter & Maria S. Schlatter ,Dolly Parton & Jenifer Lewis & Josh Segarra & Jeanine Mason & Mary Lane Haskell ,Comedy & Family & Musical ,2020
+tt10627584,6.8,Edoardo Ponti ,Ugo Chiti & Romain Gary & Fabio Natale ,Sophia Loren & Ibrahima Gueye & Renato Carpentieri & Iosif Diego Pirvu & Massimiliano Rossi ,Drama ,2020
+tt10642834,7.2,Radha Blank ,Radha Blank ,Radha Blank & Peter Kim & Oswin Benjamin & Imani Lewis & Haskiri Velazquez ,Comedy & Drama ,2020
+tt10649016,6.8,Reginald Hudlin ,Randy McKinnon & Nick Santora ,Jay Reeves & Javien Jackson & Thaddeus J. Mixson & Corinne Foxx & Matthew Glave ,Biography & Drama & Sport ,2020
+tt10682266,5.2,Steven Brill ,Tim Herlihy & Adam Sandler ,Adam Sandler & Kevin James & Julie Bowen & Ray Liotta & Steve Buscemi ,Comedy & Fantasy & Mystery ,2020
+tt10731264,5.7,Abhishek Sharma ,Shokhi Banerjee & Rohan Shankar & Rohan Shankar ,Fatima Sana Shaikh & Manoj Bajpayee & Neha Pendse & Karishma Tanna & Diljit Dosanjh ,Comedy ,2020
+tt10736580,5.4,Mark Tonderai ,Kurt Wimmer ,Omari Hardwick & Loretta Devine & Lorraine Burroughs & Hannah Gonera & Kalifa Burton ,Horror & Thriller ,2020
+tt10768194,5.3,Otoja Abit ,Otoja Abit ,Chris Noth & Nia Fairweather & Chris Trousdale & Otoja Abit & Crystal Alford ,Drama & Romance ,2020
+tt10804786,4.2,Dallas Jackson ,Dallas Jackson & Gene Quintano & Gene Quintano ,Michael Jai White & Michael Eklund & Sabryn Rock & Nakai Takawira & Lyric Justice ,Action & Drama & Thriller ,2020
+tt10808832,6.1,Steven Soderbergh ,Deborah Eisenberg ,Meryl Streep & Gemma Chan & Dianne Wiest & Christopher Fitzgerald & Candice Bergen ,Comedy & Drama ,2020
+tt10840884,7.5,Bejoy Nambiar ,Gunjit Chopra & Kartik R. Iyer & Kartik R. Iyer ,Jim Sarbh & Harshvardhan Rane & Pulkit Samrat & Kriti Kharbanda & Sanjeeda Sheikh ,Action & Thriller ,2020
+tt10885444,2.4,Maqbool Khan ,Sima Agarwal & Yash Keswani ,Ishaan Khattar & Ananya Panday & Jaideep Ahlawat & Illuminati Dance Crew & Amit Dattatray ,Action & Comedy & Romance ,2020
+tt10914452,4.6,Domenico Emanuele de Feudis ,Daniele Cosci & Daniele Cosci & Davide Orsini ,Riccardo Scamarcio & Mía Maestro & Giulia Patrignani & Mariella Lo Sardo & Federica Rosellini ,Drama & Horror & Thriller ,2020
+tt10916102,7.3,Ashish R. Shukla ,Avinash Singh & Vijay Narayan Verma ,Sanjay Mishra & Ram Kapoor & Raghav Juyal & Dibyendu Bhattacharya & Abhishek Chauhan ,Comedy & Crime & Drama ,2020
+tt10919380,6.4,Christopher Landon ,Michael Kennedy & Christopher Landon ,Vince Vaughn & Kathryn Newton & Celeste O'Connor & Misha Osherovich & Emily Holder ,Comedy & Horror & Thriller ,2020
+tt10944486,4.2,Paul Leyden ,Joseph Downey & Hope Bryant ,Malin Akerman & Bella Thorne & Dulcé Sloan & Kevin Connolly & Kevin Nash ,Action & Comedy & Drama & Sport ,2020
+tt10993566,6.4,Jesús del Cerro ,,Matei Dima & Codin Maticiuc & Letitia Vladescu & Alexandru Baraboi & Alessandra Bianchi ,Comedy & Crime ,2020
+tt11024272,5.8,McG ,Dan Lagana & Brad Morris & Jimmy Warden ,Judah Lewis & Samara Weaving & Jenna Ortega & Emily Alyn Lind & Andrew Bachelor ,Comedy & Horror ,2020
+tt11032374,8.3,Haruo Sotozaki ,Koyoharu Gotouge & Ufotable ,Bryce Papenbrook & Zach Aguilar & Abby Trott & Natsuki Hanae & Aleks Le ,Animation & Action & Adventure & Fantasy ,2020
+tt11044858,5.7,Zu Quirke ,Zu Quirke ,Sydney Sweeney & Madison Iseman & Jacques Colimon & Ivan Shaw & Julie Benz ,Horror & Mystery & Thriller ,2020
+tt11057644,6,Chris Columbus ,Matt Lieberman & Chris Columbus & Matt Lieberman ,Kurt Russell & Goldie Hawn & Darby Camp & Julian Dennison & Jahzir Bruno ,Adventure & Comedy & Family & Fantasy ,2020
+tt11100856,5.5,Mark Steven Johnson ,Elizabeth Hackett & Hilary Galanoy ,Rachael Leigh Cook & Damon Wayans Jr. & Heather Graham & Caitlin Howden & Brendan Taylor ,Comedy & Romance ,2020
+tt11102034,5.5,Mark Steven Johnson ,Elizabeth Hackett & Hilary Galanoy ,Rachael Leigh Cook & Damon Wayans Jr. & Heather Graham & Caitlin Howden & Brendan Taylor ,Comedy & Romance ,2020
+tt11112338,6.2,Zakariya Mohammed ,Ashif Kakkodi & Zakariya Mohammed & Muhsin Parari ,Parvathy Thiruvothu & Soubin Shahir & Joju George & Indrajith Sukumaran & Binu Pappu ,Comedy ,2020
+tt11112526,1.3,Abir Sengupta ,Abir Sengupta ,Kiara Advani & Aditya Seal & HrSahil & Iqbal Khan & Rakesh Bedi ,Comedy & Drama ,2020
+tt11127690,5.6,Carles Torras ,Rebeca Arnal & David Desola & Hèctor Hernández Vicens ,Mario Casas & Déborah François & Guillermo Pfening & Maria Rodríguez Soto & Celso Bugallo ,Action & Adventure & Crime & Drama & Thriller ,2020
+tt11134856,6.3,Sameer Joshi ,Sameer Joshi & Yashodhan Kelkar & Gaurav Sharma ,Siddharth Menon & Vinay Pathak & Ayesha Raza & Anuj Sullere & Sheetal Thakur ,Drama ,2019
+tt11140488,6.3,Jim Cummings ,Jim Cummings ,Jim Cummings & Riki Lindhome & Robert Forster & Chloe East & Will Madden ,Comedy & Horror & Thriller ,2020
+tt11199310,3.3,Narendra Nath ,Narendra Nath & Tharun Kumar ,Jagapathi Babu & Naveen Chandra & Divya Drishti & Kamal Kamaraju & Bhanu Sri Mehra ,Drama ,2020
+tt11199410,5.3,Mike Rohl ,Robin Bernheim & Megan Metzger & Robin Bernheim ,John Jack & Vanessa Hudgens & Sam Palladio & Mark Fleischmann & Mia Lloyd ,Comedy & Drama & Family & Romance ,2020
+tt11212172,5.4,Max McGuire ,Claire Ross Dunn ,Clark Backo & Jonathan Keltz & Kathryn Kohut & Gabrielle Jennings & Chris Violette ,Romance ,2020
+tt11229134,3.8,Ashok G. ,Ashok G. ,Mahie Gill & Bhumi Pednekar & Karan Kapadia & Jisshu Sengupta & Arshad Warsi ,Horror & Thriller ,2020
+tt11229780,5.8,Cyrus Nowrasteh ,Cyrus Nowrasteh ,Jim Caviezel & Claudia Karvan & Hal Ozsan & Stelio Savante & Isabelle Adriani ,Action & Adventure & Thriller ,2019
+tt11240506,4.8,Bartosz M. Kowalski ,Bartosz M. Kowalski & Jan Kwiecinski & Mirella Zaradkiewicz ,Julia Wieniawa-Narkiewicz & Michal Lupa & Wiktoria Gasiewska & Stanislaw Cywka & Sebastian Dela ,Horror & Thriller ,2020
+tt11242218,5.6,Brannon Braga ,Adam Simon & Brannon Braga & Clive Barker ,Britt Robertson & Freda Foh Shen & Nicholas Campbell & Anna Friel & Rafi Gavron ,Drama & Horror & Mystery & Sci-Fi ,2020
+tt11262098,6.7,Bradford Thomason & Brett Whitcomb ,,,Documentary ,2020
+tt11266868,5,Luke Armstrong ,Luke Armstrong ,Johnny Sachon & Lottie Tolhurst & Michael Condron & Brian Bovell & Ben Valentine ,Drama & Sci-Fi & Thriller ,2020
+tt11276598,3.8,Reinhard Klooss ,Reinhard Klooss & Reinhard Klooss & Oliver Huzly ,Patrick Roche & Natalie Dormer & Felix Auer & Jeff Burrell & Harvey Friedman ,Animation & Adventure & Comedy ,2019
+tt11284280,5.1,Jarand Herdal ,Jarand Herdal ,Gitte Witt & Thomas Gullestad & Thorbjørn Harr & Maria Grazia Di Meo & Gjermund Gjesme ,Drama & Horror & Thriller ,2020
+tt11311958,6.4,RJ Balaji & N.J. Saravanan ,RJ Balaji ,Nayanthara & RJ Balaji & Urvashi & Smruthi Venkat & Madhu Mailankodi ,Comedy & Drama & Fantasy ,2020
+tt11327514,7.2,Alan Ball ,Alan Ball ,Paul Bettany & Sophia Lillis & Peter Macdissi & Steve Zahn & Judy Greer ,Comedy & Drama ,2020
+tt11378154,3.4,Monica Floyd ,Peter John & Miriam Bavly & Jennifer Rapaport ,Ray J & Jackie Long & J. Anthony Brown & Jayq & Elise Neal ,Comedy ,2020
+tt11434772,6.3,Marina Kunarova ,Marina Kunarova ,Dulyga Akmolda & Akylkhan Almassov & Rayana Daulet & Sayazhan Kulymbetova & Adilet Zhangali ,Drama ,2020
+tt11464826,7.7,Jeff Orlowski ,Davis Coombe & Vickie Curtis & Jeff Orlowski ,Tristan Harris & Jeff Seibert & Bailey Richardson & Joe Toscano & Sandy Parakilas ,Documentary & Drama ,2020
+tt11481312,5.9,Kunle Afolayan ,Tunde Babalola ,Jimmy Jean-Louis & Temi Otedola & Adjetey Anang & Bukunmi Oluwashina & Ini Edo ,Drama & Thriller ,2020
+tt11497232,6.1,Abrid Shine ,,Neeta Pillai & Jiji Scaria & Sanoop Dinesh & Sooraj S. Kurup & Sonet Jose ,Action ,2020
+tt11499506,5.2,Ludovico Di Martino ,Claudia De Angelis & Ludovico Di Martino & Andrea Paris ,Fabrizio Gifuni & Lino Musella & Monica Piseddu & Andrea Pennacchi & Emanuele Linfatti ,Action & Crime & Drama & Thriller ,2020
+tt11576124,3.8,M.J. Bassett ,Isabel Bassett & M.J. Bassett ,Megan Fox & Philip Winchester & Greg Kriek & Brandon Auret & Jessica Sutton ,Action & Horror & Thriller ,2020
+tt11638714,3.3,Dutch Marich ,Dutch Marich ,Brooke Bradshaw & Dani Colleen & Chrissy Carpenter & Jared Chandus Cain & Hannah Landberg ,Horror ,2020
+tt11656172,4.1,Matt Eskandari ,Joe Russo & Chris LaMont & Clayton Haugen ,Jesse Metcalfe & Bruce Willis & Lala Kent & Natalie Eva Marie & Texas Battle ,Action & Thriller ,2020
+tt11681250,6.2,Sharon Maguire ,Kari Granlund & Melissa K. Stack & Kari Granlund ,June Squibb & Jillian Bell & Sonia Manzano & Carlease Burke & Jane Curtin ,Comedy & Drama & Family & Fantasy ,2020
+tt11695654,5.9,Matthew John Lawrence ,Matthew John Lawrence ,Mike Lawrence & David Littleton & Chet Siegel & David Bluvband & Ruth Lolla ,Comedy & Horror & Music ,2020
+tt11697484,4.3,Brian Skiba ,Eric Bromberg & James Bromberg & Eric Bromberg ,Ryan Phillippe & Casper Van Dien & Jack Griffo & Lexi Simonsen & Richard Burgi ,Action & Drama ,2020
+tt11731768,7.1,P. Virumandi ,P. Virumandi ,Bhavani Sre & Arunraja Kamaraj & Hello Kandasamy & Munishkanth & Namo Narayana ,Drama ,2020
+tt11734702,0,Aditya Awandhe & Pranshuman Singh Naruka ,Nadeem Sham & Pranshuman Singh Naruka & Kapil Bisht ,Nadeem Sham & Naomi Willow & Vivien Monory & Sanjay Gurbaxani & Rajeev Bharadwaj ,Action & Adventure & Thriller ,0
+tt11750282,6.1,Ángel Gómez Hernández ,Santiago Díaz & Santiago Díaz & Ángel Gómez Hernández ,Rodolfo Sancho & Ana Fernández & Ramón Barea & Belén Fabra & Lucas Blas ,Drama & Horror & Thriller ,2020
+tt11771594,3.8,Mike Elliott ,Adam Herz & Blayne Weaver & David H. Steinberg ,Madison Pettis & Lizze Broadway & Natasha Behnam & Piper Curda & Darren Barnet ,Comedy ,2020
+tt11792734,3.8,Ezel Akay ,Ezel Akay & Özlem Lale & Ugur Saatci ,Haluk Bilginer & Demet Akbag & Elçin Sangu & Firat Tanis & Alican Yücesoy ,Comedy ,2020
+tt11833648,7.9,Faris Godus ,Faris Godus & Sohayb Godus & Hani Kadour ,Sohayb Godus & Baraa Alem & Ismail Alhassan & Ahmed Saddam & Nawaf Alshubaili ,Comedy ,2020
+tt11835714,3.2,Marc Price ,Marc Price ,Phoebe Sparrow & Daisy Aitkens & Simon Dwyer-Thomas & Alastair Kirton & Richard Corgan ,Sci-Fi ,2020
+tt11851846,6.1,Cameron Reilly ,Cameron Reilly ,Michael Bird & Richard Carrier & Geoffrey Dunn & David Fitzgerald & Chris Forbes ,Documentary ,2020
+tt11880600,7.4,Bipin Nadkarni ,Radhika Anand & Rakesh Jadhav & Bipin Nadkarni ,Sharib Hashmi & Sharad Kelkar & Mukesh Ramani & Flora Saini ,Drama ,2020
+tt11905962,6.4,Egor Abramenko ,Oleg Malovichko & Andrey Zolotarev ,Oksana Akinshina & Fedor Bondarchuk & Pyotr Fyodorov & Anton Vasilev & Aleksey Demidov ,Drama & Horror & Sci-Fi & Thriller ,2020
+tt11924476,5.8,Charlie Steeds ,Charlie Steeds ,Reece Connolly & Tim Cartwright & Natalie Martins & Mark McKirdy & Jéssica Alonso ,Horror ,2020
+tt11989890,9,Alastair Fothergill & Jonathan Hughes & Keith Scholey ,,David Attenborough & Max Hughes ,Documentary & Biography ,2020
+tt12025884,7.6,J. Horton ,,Mike Bara & L.A. Marzulli & Nick Pope & Nick Redfern ,Documentary ,2020
+tt12108272,6.3,Michael Mazzola ,Michael Mazzola ,Linda A'Roraha & Wendy Boast & Justice Campbell & Jeremy Cloake & Adam Michael Curry ,Documentary ,2020
+tt12109842,5.9,Dinesh D'Souza & Bruce Schooley ,Dinesh D'Souza ,Stephen Brodie & Dinesh D'Souza & John Di Domenico & Kathryn Palmer & Don Taylor ,Documentary ,2020
+tt12298506,6.1,Emmanuel Osei-Kuffour ,Emmanuel Osei-Kuffour & Stephen Herman & Stephen Herman ,Mamoudou Athie & Phylicia Rashad & Amanda Christine & Tosin Morohunfola & Charmaine Bingwa ,Horror & Mystery & Sci-Fi & Thriller ,2020
+tt12484058,2.4,Christopher Forbes ,Jezibell Anat ,Mike Amason & Alyssa Amelia & Jezibell Anat & David Axe & Ronald Blanton ,History ,2020
+tt12553190,6.8,Jeethu Joseph ,Sameer Arora & Renzil D'Silva & Jeethu Joseph ,Jyotika & Sathyaraj & Karthi & Showkar Janaki & Nikhila Vimal ,Action & Thriller ,2019
+tt12553556,8.5,Lokesh Kanagaraj ,Lokesh Kanagaraj & Pon Parthiban ,Karthi & Narain & Ramana & George Maryan & Harish Uthaman ,Action & Thriller ,2019
+tt12569462,5.4,Daniel Lombroso ,,Mike Cernovich & Lauren Southern & Richard Spencer ,Documentary ,2020
+tt12592252,4.4,Adam Mason ,Adam Mason & Simon Boyes ,K.J. Apa & Sofia Carson & Craig Robinson & Bradley Whitford & Peter Stormare ,Comedy & Thriller ,2020
+tt12600214,9.3,Edesio Alejandro & Mo Fini ,Mo Fini & Paul Morris ,Idolka de Erbiti & Yudexi De La Torre Mesa & Mo Fini & Julio Cesar Llamos & Héctor Noas ,Drama ,2020
+tt12677092,7.8,Mahesh Narayan ,Mahesh Narayan ,Fahadh Faasil & Darshana Rajendran & Roshan Mathew & Saiju Kurup & Maala Parvathi ,Drama & Mystery & Thriller ,2020
+tt12694562,4.1,Hannah Rosenzweig & Wendy Sachs ,,,Documentary ,2020
+tt12723616,6.6,Raghavendra Varma Indukuri ,K. Raghavendra Rao & Akshay Poolla ,Sai Sushanth Reddy & Simran Chowdary & Chandini Chowdary & Priyadarshi & Makrand Deshpande ,Action & Comedy & Sci-Fi ,2020
+tt12734800,5.7,Amanda Milius ,Lee Smith ,Michael Anton & Mike Cernovich & Tom Fitton & Matt Gaetz & Rudy Giuliani ,Documentary ,2020
+tt12749596,6.6,Rob Savage ,Gemma Hurley & Rob Savage & Jed Shepherd ,Haley Bishop & Jemma Moore & Emma Louise Webb & Radina Drandova & Caroline Ward ,Horror & Mystery ,2020
+tt12757438,3.7,Tim Hunter ,Bret Easton Ellis ,Ronen Rubinstein & Mia Serafino & Crispin Glover & Amadeus Serafini & Ashley Rickards ,Horror & Thriller ,2020
+tt12758600,7.6,Nachiket Samant ,Raghav Raj Kakker & Kashyap Kapoor & Bikas Ranjan Mishra ,Saqib Saleem & Shweta Basu Prasad & Pooja Bedi & Rajesh Tailang & Madhu Sachdeva ,Comedy & Romance ,2020
+tt12859806,8.7,Nathaniel J. Menninger ,,,Documentary & Adventure ,2020
+tt12882620,4.7,Elan Dassani & Rajeev Dassani ,Madhuri Shekar & Madhuri Shekar ,Sarita Choudhury & Sunita Mani & Bernard White & Omar Maskati & Anjali Bhimani ,Horror & Mystery & Thriller ,2020
+tt12888462,8.3,Pippa Ehrlich & James Reed ,Pippa Ehrlich & James Reed ,Craig Foster & Tom Foster ,Documentary ,2020
+tt12969078,7.9,Shiv Hare ,Abhishek Brahmachari & Aadesh Raathi & Shiv Hare ,Lydian Nadhaswaram & Sachin Chaudhary & Tamanna Dipak & Aayesha Vindhara & Yash Rane ,Drama & Musical ,2020
+tt12971924,4.5,Timothy Woodward Jr. ,Patrick Stibbs ,Lin Shaye & Tobin Bell & Chester Rushing & Erin Sanders & Mike Manning ,Horror & Thriller ,2020
+tt12975804,2.8,Gerard Daly ,Gerard Daly ,George Bracebridge & Gary Byrne & Gerry Cannon & Kara Casey & Leo Casey ,Crime ,2020
+tt12987894,7.2,Jenny Popplewell ,,Nickole Atkinson & Jim Benemann & Luke Epple & Mark Jamieson & Nichol Kessinger ,Documentary & Crime ,2020
+tt13055780,5.8,Shaun Paul Piccinino ,Lauren Swickard ,Lauren Swickard & Josh Swickard & Ali Afshar & David Del Rio & Katelyn Epperly ,Comedy & Drama & Romance ,2020
+tt13058290,7.5,Caroline Suh ,,Jennie Kim & Ji-soo Kim & Lalisa Manoban & Rosé ,Documentary & Music ,2020
+tt13060796,5,Juliet Landau ,Juliet Landau & Deverill Weekes ,Juliet Landau & Gary Oldman & Robert Patrick & Ron Perlman & Lance Henriksen ,Drama & Horror & Thriller ,2020
+tt13065386,7.7,Alex Gibney & Ophelia Harutyunyan & Suzanne Hillinger ,Alex Gibney ,Alex Azar & Charlie Baker & Scott Becker & Taison Bell & Deborah Birx ,Documentary ,2020
+tt13087958,6.9,Sudha Kongara & Gautham Vasudev Menon & Rajiv Menon & Karthik Subbaraj & Suhasini ,Reshma Ghatala & Aadithya K.R. & Rajiv Menon ,Madhavan & Jayaram & Kalidas Jayaram & Kalyani Priyadarshan & Preethi Nedumaran ,Drama ,2020
+tt13095604,7.5,James Fox ,Marc Barasch & Marc Barasch & James Fox ,Bill Clinton & Peter Coyote & George Knapp & Chris Mellon & Garry Nolan ,Documentary ,2020
+tt13097434,8.3,Sandeep Raj ,Sandeep Raj & Sai Rajesh Neelam ,Suhas & Chandini Chowdary & Suneel & Harsha Chemudu & Divya Drishti ,Drama ,2020
+tt13105536,6.1,Kiran Kondamadugula ,Kiran Kondamadugula ,Bhargava Poludasu & Rakesh Galebhe & Poojitha Kuraparthi & Lakshmi Bharadwaj & Harsha Vardhan Pratap ,Thriller ,2020
+tt13143964,6.7,Jason Woliner ,Sacha Baron Cohen & Anthony Hines & Dan Swimer ,Sacha Baron Cohen & Maria Bakalova & Tom Hanks & Dani Popescu & Manuel Vieru ,Comedy ,2020
+tt13150630,7.3,James Tovell ,,Ahmed Zikrey Abdellhak & Ghareeb Ali Mohammed Abushousha & Nabil Eldaleel & Sabry Mohyeldin Farag & Salima Ikram ,Documentary & History ,2020
+tt13177004,9.3,Diana Rodgers ,Callie T. Wiser ,,Documentary ,2020
+tt13178692,5.6,Gunveen Kaur & Robin Sikarwar ,Gunveen Kaur & Robin Sikarwar ,Vivek Kumar & Deeksha Joshi & Sumit Singh Sikarwar & Priyanka Sharma & Shuddho Banerjee ,Crime & Thriller ,2020
+tt13206988,8.2,Sudha Kongara & Gautham Vasudev Menon & Vignesh Shivan & Vetrimaaran ,Shan Karuppusamy & Sudha Kongara & Gautham Vasudev Menon ,Kalidas Jayaram & Shanthnu Bhagyaraj & Bhavani Sre & Anjali & Kalki Koechlin ,Drama ,2020
+tt13231270,8.1,Bandi Saroj Kumar ,Bandi Saroj Kumar ,Bandi Saroj Kumar & Anil Kumar & Alysha Melani & Soumya Naidu & Devaki ,Crime & Thriller ,2020
+tt13236566,5.8,Martin Wood ,Gregg Rossen & Brian Sawyer ,Kat Graham & Alexander Ludwig & Trezzo Mahoro & Bethany Brown & Rohan Campbell ,Comedy & Family & Romance ,2020
+tt13242960,7.7,Vinod Anantoju ,Janardhan Pasumarthi & Janardhan Pasumarthi & Vinod Anantoju ,Abhiram & Achila & Ajay & Vinod Anantoju & Katta Anthony ,Comedy & Drama & Romance ,2020
+tt13276386,6.5,Grant Singer ,,Shawn Mendes & Camila Cabello & Evan A. Dunn ,Documentary & Music ,2020
+tt13318052,5.8,Max McGuire ,Carley Smale ,Natalie Hall & Evan Williams & Alison Brooks & Steve Cumyn & Peter Michael Dillon ,Comedy & Romance ,2020
+tt13345636,6,Deepa Mehta ,Deepa Mehta & Shyam Selvadurai ,Agam Darshi & Nimmi Harasgama & Ali Kazmi & Shivantha Wijesinha & Rehan Mudannayake ,Drama ,2020
+tt13354204,6.7,Roberto Santucci ,Paulo Cursino ,Arianne Botelho & Louise Cardoso & José Rubens Chachá & Rodrigo Fagundes & Lola Fanucchi ,Comedy & Drama ,2020
+tt13381376,7.4,Pushkar Mahabal ,Ankita Narang ,Kashmira Irani & Swarda Thigle & Shashi Bhushan & Boloram Das & Tina Bhatia ,Drama & Horror & Thriller ,2020
+tt13410842,8.8,Saurabh Gulab Rao ,Saurabh Gulab Rao ,Naman Bhati & Akshay Kaushal & Atul Kaushal & Sanjeet Sadh & Rajat Saini ,Comedy & Crime ,2020
+tt13411840,8.8,Callum Drummond & Axel Haudiquet ,,Dan Leo & Inoke Afeaki & Ben Atiga & Frank Bunce & Rupeni Caucaunibuca ,Documentary ,2020
+tt13423846,1,Shady Al Ramly ,Mayssa Maghrebi ,Rakan Abdulwahed & Dyler & Majed Fawaz & Fai Fouad & Zyad Bin Hijab ,Drama ,2020
+tt13438922,7.1,Akhil Gautam & Akhil Gautam ,Sai Sagar ,Ajay Bafna & Vikas Sachdeva & Sejal Shah ,Thriller ,2020
+tt13491620,7.2,Nikkhil Advani & Avinash Arun & Tannishtha Chatterjee & Krishna D.K. & Nitya Mehra & Raj Nidimoru ,Devika Bhagat & Tarun Dudeja & Nitya Mehra ,Gulshan Devaiah & Saiyami Kher & Richa Chadha & Ishwak Singh & Sumeet Vyas ,Drama & Romance ,2020
+tt13524234,8.5,Taylor Swift ,,Jack Antonoff & Aaron Dessner & Taylor Swift & Justin Vernon ,Documentary & Drama & Music ,2020

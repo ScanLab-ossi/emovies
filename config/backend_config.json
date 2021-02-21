@@ -1,0 +1,10 @@
+{
+  "batch_update": false,
+  "create_glyph": false,
+  "create_tsne_glyph": false,
+  "optimize": false,
+  "ip": "localhost",
+  "port": 27017,
+  "fill": false
+
+}

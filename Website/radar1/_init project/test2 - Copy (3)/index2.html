@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link href="jquery-ui.min.css" rel="stylesheet">
+	<style type="text/css">
+		body {
+			margin: 1rem;
+			background-color: gray;
+		}
+
+		g.glyph {
+			stroke: cadetblue;
+			stroke-width: 0.3px;
+			stroke-opacity: 0.3;
+			border: 1px solid;
+			border-color: red
+		}
+
+		#chart {
+			height: 800px;
+			border: 1px solid;
+			overflow: hidden;
+			margin-top: 1rem;
+			position: relative;
+			z-index: 1;
+			background-color: #444;
+		}
+		#movielist {
+			height: 100px;
+			border: 1px solid;
+			overflow: hidden;
+			margin-top: 1rem;
+			position: relative;
+			z-index: 1;
+		}
+
+		#filters {
+			display: inline-block;
+			border: 1px solid;
+			width: 30%;
+			margin-top: 1rem;
+		}
+
+		.filters-heading,
+		.results-heading {
+			text-align: center;
+			font-size: 2rem;
+			background: grey;
+			padding: 1rem;
+			margin: 0px;
+		}
+
+		#results {
+			float: left;
+			width: 69.5%;
+			height: 435px;
+			overflow: auto;
+			border: 1px solid;
+			margin-top: 1rem;
+		}
+
+		#filters-container .emotion-range {
+			height: 300px;
+			float: left;
+			margin: 15px
+		}
+
+		table {
+		  font-size: 10px;
+		  line-height: 10px;
+		}
+		td, th {
+		  width: 33.3%;
+		}
+		label {
+		  margin-bottom: 10px;
+		}
+
+		.anger>.ui-slider-range {
+			background: #66c2a5;
+		}
+
+		.anticipation>.ui-slider-range {
+			background: #fc8d62;
+		}
+
+		.joy>.ui-slider-range {
+			background: #8da0cb;
+		}
+
+		.trust>.ui-slider-range {
+			background: #e78ac3;
+		}
+
+		.fear>.ui-slider-range {
+			background: #a6d854;
+		}
+
+		.surprise>.ui-slider-range {
+			background: #ffd92f;
+		}
+
+		.sadness>.ui-slider-range {
+			background: #e5c494;
+		}
+
+		.disgust>.ui-slider-range {
+			background: #b3b3b3;
+		}
+
+		.emotion-range {
+			background: #FFF;
+			width: 1.5rem;
+		}
+
+		.emotion-range>.ui-slider-handle {
+			width: 2rem;
+		}
+
+		.emotion-range-container {
+			display: inline-block;
+			padding: 1rem;
+		}
+
+		.emotion-range-label {
+			text-align: center;
+		}
+
+		.emotion-range-value {
+			text-align: center;
+			padding-top: .5rem;
+		}
+
+		.ui-progressbar {
+			width: 30%;
+			position: fixed;
+			top: 50%;
+			left: 35%;
+		}
+
+		.progress-label {
+			position: absolute;
+			left: 40%;
+			top: 4px;
+			font-weight: bold;
+			text-shadow: 1px 1px 0 #fff;
+		}
+
+		.ui-progressbar.hide {
+			display: none;
+		}
+
+		.results-accordion-section-contianer {
+			background-repeat: repeat-y;
+		}
+	</style>
+	<script src="d3.js"></script>
+	<script src="jquery.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<script src="emoglyph1.js"></script>
+	<script src="bigSlide.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script type="text/javascript">
+
+    $(document).ready(function() {
+
+	
+    //   var w = 1000;
+    //   var h = 500;
+    //   var padding = 5;
+    //   var xMax = 0;
+    //   var yMax = 0;
+    //   var xMin = 99999;
+    //   var yMin = 99999;
+    //   var iMax = {anger:0, anticipation:0, joy:0, trust:0, fear:0, surprise:0, sadness:0, disgust:0};
+    //   var iMin = {anger:100, anticipation:100, joy:100, trust:100, fear:100, surprise:100, sadness:100, disgust:100};
+//      var filetoload = "TSNE-pre33-iter-1000.csv";
+//      var filetoload = "test2.csv";
+//      var filetoload = "test1.csv";
+      var filetoload = "vis-8.csv";
+//      var current = "TSNE"
+//      d3.select("#titlepage").text("TSNE");
+    //   var filters = '';
+    //   var zData;
+    //   var emotions = ['anger', 'anticipation' , 'joy' , 'trust' , 'fear' , 'surprise' , 'sadness', 'disgust' ];
+    //   var colors1 = ['#8dd3c7','#ffffb3','#bebada','#fb8072','#80b1d3','#fdb462','#b3de69','#fccde5'];
+    //   var colors = ['#66c2a5','#fc8d62','#8da0cb','#e78ac3','#a6d854','#ffd92f','#e5c494','#b3b3b3'];
+    //   var colors0 = ["#FF7200","#FFE736","#00AE00","#D10000","#007700","#DC00DD","#0000C5","#007DDF"];
+	//   var colors2 = ["#000000","#DF0101","#08298A","#0080FF","#424242","#585858","#848484","#BDBDBD"];
+	
+    //   var width= $("#chart").width(),
+    //   height=383,
+    //   margin=10;
+    //   var k = height / width,
+    //   x0 = [-4.5, 4.5],
+    //   y0 = [-4.5 * k, 4.5 * k],
+    //   x = d3.scaleLinear().domain(x0).range([0, width]),
+    //   y = d3.scaleLinear().domain(y0).range([height, 0]),
+    //   z = d3.scaleOrdinal(d3.schemeCategory10);
+
+    //   var xAxis = d3.axisTop(x).ticks(12),
+    //   yAxis = d3.axisRight(y).ticks(12 * height / width);
+
+    //   var svg = d3.select("#chart")
+    //   .append("svg")
+    //   .attr("width", width-margin-margin)
+    //   .attr("height", height-margin-margin)
+    //   .on("dblclick.zoom", null)
+    //   .call(d3.zoom().on("zoom", function () {
+    //     //console.log(d3.event.transform );
+    //     svg.attr('transform', 'translate(' + d3.event.transform.x + ',' + d3.event.transform.y + ') scale(' + d3.event.transform.k + ')');
+    //    }))
+    //   .append("g")
+    //   .attr("transform","translate("+margin+","+margin+")");
+
+    //   var brush = d3.brush().on("end", brushended),
+    //   idleTimeout,
+    //   idleDelay = 350;
+
+    //   svg.append("g")
+    //   .attr("class", "brush")
+    //   .call(brush);
+      d3.csv(filetoload, function(data) {
+		$("#chart").data('origJson',data);  
+		emovis.loadGraphWithData(data,true);
+	  });//end d3.csv(filetoload, function(data)
+
+	//   function loadGraphWithData(data){
+    //     data.forEach(function(d){
+    //       //console.log(d);
+    //       if (parseFloat(d['x']) > xMax) {xMax = parseFloat(d['x'])};
+    //       if (parseFloat(d['y']) > yMax) {yMax = parseFloat(d['y'])};
+    //       if (parseFloat(d['x']) < xMin) {xMin = parseFloat(d['x'])};
+    //       if (parseFloat(d['y']) < yMin) {yMin = parseFloat(d['y'])};
+
+    //       if (parseFloat(d['anger']) > iMax.anger) {iMax.anger = parseFloat(d['anger'])};
+    //       if (parseFloat(d['anticipation']) > iMax.anticipation) {iMax.anticipation = parseFloat(d['anticipation'])};
+    //       if (parseFloat(d['joy']) > iMax.joy) {iMax.joy = parseFloat(d['joy'])};
+    //       if (parseFloat(d['trust']) > iMax.trust) {iMax.trust = parseFloat(d['trust'])};
+    //       if (parseFloat(d['fear']) > iMax.fear) {iMax.fear = parseFloat(d['fear'])};
+    //       if (parseFloat(d['surprise']) > iMax.surprise) {iMax.surprise = parseFloat(d['surprise'])};
+    //       if (parseFloat(d['sadness']) > iMax.sadness) {iMax.sadness = parseFloat(d['sadness'])};
+    //       if (parseFloat(d['disgust']) > iMax.disgust) {iMax.disgust = parseFloat(d['disgust'])};
+
+    //       if (parseFloat(d['anger']) < iMin.anger) {iMin.anger = parseFloat(d['anger'])};
+    //       if (parseFloat(d['anticipation']) < iMin.anticipation) {iMin.anticipation = parseFloat(d['anticipation'])};
+    //       if (parseFloat(d['joy']) < iMin.joy) {iMin.joy = parseFloat(d['joy'])};
+    //       if (parseFloat(d['trust']) < iMin.trust) {iMin.trust = parseFloat(d['trust'])};
+    //       if (parseFloat(d['fear']) < iMin.fear) {iMin.fear = parseFloat(d['fear'])};
+    //       if (parseFloat(d['surprise']) < iMin.surprise) {iMin.surprise = parseFloat(d['surprise'])};
+    //       if (parseFloat(d['sadness']) < iMin.sadness) {iMin.sadness = parseFloat(d['sadness'])};
+    //       if (parseFloat(d['disgust']) < iMin.disgust) {iMin.disgust = parseFloat(d['disgust'])};
+    //     });//end data.forEach(function(d)
+
+    //     zData = data;
+    //     // creates an EMOCHART from the data, with the defined configuration object
+    //     // console.log(xMin+'::'+xMax);
+    //     // console.log(yMin+'::'+yMax);
+    //     var emoChart = new emovis.emoglyph(padding,iMax, iMin, svg,data,getConfig(filters),xMin,xMax,yMin,yMax);
+	//   }
+
+    //   function getConfig(filters){
+    //     var width= $("#chart").width(),
+    //         height=$("#chart").height(),
+    //         margin=5;
+    //     return {
+    //           size:12,
+    //           emotions: emotions,
+    //           colors1: colors1,
+    //           colors: colors,
+    //           colors0: colors0,
+    //           colors2: colors2,
+    //           title: "movieTitle",
+    //           total: "Total",
+    //           width:width-margin-margin,
+    //           height:height-margin-margin,
+    //           filters:filters,
+    //         };
+    //   }
+
+    //   function doFilters(filters){
+    //     //console.log(zData);
+    //     //d3.selectAll("svg").remove();
+    //     svg = d3.selectAll("svg");
+    //     d3.selectAll(".glyph").remove();
+
+    //     var emoChart = new emovis.emoglyph(padding,iMax, iMin, svg,zData,getConfig(filters,xMin,xMax,yMin,yMax));
+    //   }
+    //   function brushended() {
+    //     var s = d3.event.selection;
+    //     var scale = 1;
+    //     console.log(s);
+    //     if (!s) {
+    //       if (!idleTimeout) return idleTimeout = setTimeout(idled, idleDelay);
+    //       x.domain(x0);
+    //       y.domain(y0);
+    //     } else {
+    //       x.domain([s[0][0], s[0][1]].map(x.invert, x));
+    //       y.domain([s[1][0], s[1][1]].map(y.invert, y));
+    //       svg.select(".brush").call(brush.move, null);
+    //       scale = s[0][0]/s[1][1];
+    //     }
+    //     //console.log(scale);
+    //     //svg.attr('transform', 'translate(' + s[0][1] + ',' + s[1][1] + ') scale(' + scale + ')');
+    //     svg.attr('transform', 'scale(' + scale + ')');
+    //     //zoom();
+    //   }
+
+    //   function idled() {
+    //     idleTimeout = null;
+    //   }
+
+    //   function zoom() {
+    //     var t = svg.transition().duration(750);
+
+    //     //console.log(d3.event.transform );
+    //     // svg.select(".axis--x").transition(t).call(xAxis);
+    //     // svg.select(".axis--y").transition(t).call(yAxis);
+    //     // svg.selectAll(".glyph rect").transition(t)
+    //     //     .attr("x", function(d) {
+    //     //       console.log(d.x);
+    //     //       return x(d.x);
+    //     //     })
+    //     //     .attr("y", function(d) {
+    //     //       console.log(d.y);
+    //     //       return y(d.y);
+    //     //     });
+    //   }
+/*
+      var filtersList = $('#filters') ;
+      var list = [];
+
+      var h2 = $('<h2/>').text('Filters:').appendTo(filtersList);
+      $.each(emotions, function(i)
+      {
+        var span = $('<span/>')
+              .attr('style','background-color:'+ colors[i])
+              .text(emotions[i])
+              .appendTo(filtersList);
+        var input = $('<input/>')
+              .addClass('filter')
+              .attr('type', 'checkbox')
+              .attr("value",emotions[i])
+              .appendTo(span);
+      });
+
+      $(document).on('change', '[type=checkbox]', function (e) {
+        //console.log(this.value);
+        if(e.currentTarget.checked){
+          list.push(this.value);
+        }else{
+          list.splice( $.inArray(this.value,list) ,1 );
+        }
+        doFilters(list);
+      });
+	*/
+
+    });//end $(document).ready(function()
+  </script>
+  <style>
+    h2{    margin: 0.3em 0;font-size: 1em;}
+    #filters span {padding: 0.5em;}
+	</style>
+	
+
+	<script>
+		$(document).ready(function () {
+
+			$(".filter-reset-action").click(function(){
+				emovis.resetFilters();
+			});
+
+			$( "#filter-reset-confirm" ).dialog({
+				appendTo: "#menu",
+				resizable: false,
+				height: "auto",
+				width: 400,
+				modal: true,
+				closeOnEscape: false,
+				closeText: "hide",
+				autoOpen: false,
+				open: function(event,ui){
+					$( "#filter-reset-confirm" ).dialog( "option", "doReset", false );
+				},
+				close: function(event, ui){
+					var options = $( "#filter-reset-confirm" ).dialog( "option" );
+					var doReset = options.doReset || false;
+					if(doReset){
+						emovis.showLoadingWheel();
+						emovis.turnOffFilters();
+						emovis.hideLoadingWheel();
+						emovis.bigSlideAPI.view.toggleClose();
+					}else{
+						//$(".filter-enable-toggle").val("true");
+						$(".filter-enable-toggle").trigger("click");
+					}
+				},
+				buttons: [
+					{
+						text: "Yes",
+						icon: "ui-icon-close",
+						click: function() {
+							$( "#filter-reset-confirm" ).dialog( "option", "doReset", true );
+							$( this ).dialog( "close" );
+						}
+					},
+					{
+						text: "No",
+						icon: "ui-icon-close",
+						click: function() {
+							$( "#filter-reset-confirm" ).dialog( "option", "doReset", false );
+							$( this ).dialog( "close" );
+						}
+					}
+				]
+			});
+	
+			$.switcher('.filter-enable-toggle');
+
+			emovis.bigSlideAPI = $('.filter-launcher').bigSlide({
+				//easyClose: true,
+				side: 'right',
+				menuWidth: '44em',
+				beforeOpen: function () { },
+				afterOpen: function () { $(".filter-action").show(); },
+				beforeClose: function () { $(".filter-action").hide(); },
+				afterClose: function () { }
+			}).bigSlideAPI;
+
+			$(".emotion-range").each(function () {
+				// read initial values from markup and remove that
+				var value = parseInt($(this).text(), 10);
+				$(this).empty().slider({
+					value: value,
+					range: "min",
+					min: 0,
+					max: 100,
+					animate: true,
+					orientation: "vertical",
+					stop: function (event, ui) {
+						var valueElem = $(event.target).parent().find('.emotion-range-value')[0];
+						if (valueElem) {
+							valueElem.innerText = ui.value;
+						}
+					}
+				});
+			});
+			$(".filters-sidebar").accordion({
+				heightStyle: "content",
+				collapsible: true
+			});
+
+			$(".filter-enable-toggle").click(function (ev) {
+				var currentValue = ev.target.value;
+				if (currentValue === "false") {
+					ev.target.value = "true";
+					emovis.enableFilters();
+				} else {
+					ev.target.value = "false";
+					emovis.disableFilters();
+					$( "#filter-reset-confirm" ).dialog( "open" );
+				}
+			});
+
+			$(".filter-enable-toggle").on('init', function (ev) {
+				ev.target.value = "false";
+				emovis.disableFilters();
+			});
+			
+			$(".filter-action").click(function(ev){
+				emovis.doFilter();
+			});
+
+			// intial view
+			//$(".filter-enable-toggle").trigger('click');
+			$(".filter-enable-toggle").trigger('init');
+			$(".filter-action").hide();
+
+			var progressbar = $("#progressbar");
+			var progressLabel = $(".progress-label");
+
+			progressbar.progressbar({
+				value: false,
+			});
+
+			$(".star-rating-checkbox").click(function(ev){
+				setFilterValue('movieRatingFilterValue',ev.target.value);
+			});
+
+			$('#fromYear').change(function(ev){
+				setFilterValue('movieFromYearFilter',ev.target.value);
+			});
+
+			$('#toYear').change(function(ev){
+				setFilterValue('movieToYearFilter',ev.target.value);
+			});
+
+			$('.filter-movie-title').change(function(ev){
+				setFilterValue('movieTitleFilter',ev.target.value);
+			});
+			
+
+			$('.filter-movie-director').change(function(ev){
+				setFilterValue('movieDirectorFilter',ev.target.value);
+			});
+			
+			$('.filter-movie-writer').change(function(ev){
+				setFilterValue('movieWriterFilter',ev.target.value);
+			});
+			
+
+			$('.filter-movie-cast').change(function(ev){
+				setFilterValue('movieCastFilter',ev.target.value);
+			});
+			
+
+			$('.filter-movie-genre').change(function(ev){
+				setFilterValue('moviewGenreFilter',ev.target.value);
+			});
+
+			function setFilterValue(filterType, filterValue){
+				if(filterValue && filterValue.trim().length > 0){
+						emovis[filterType] = filterValue;
+				}else{
+						emovis[filterType] = undefined;
+				}
+			}
+
+
+			var w = 1000;
+      var h = 500;
+      var padding = 5;
+      var xMax = 0;
+      var yMax = 0;
+      var xMin = 99999;
+      var yMin = 99999;
+      var iMax = {anger:0, anticipation:0, joy:0, trust:0, fear:0, surprise:0, sadness:0, disgust:0};
+      var iMin = {anger:100, anticipation:100, joy:100, trust:100, fear:100, surprise:100, sadness:100, disgust:100};
+//      var filetoload = "TSNE-pre33-iter-1000.csv";
+//      var filetoload = "test2.csv";
+//      var filetoload = "test1.csv";
+      var filetoload = "vis-8.csv";
+//      var current = "TSNE"
+//      d3.select("#titlepage").text("TSNE");
+      var filters = '';
+      var zData;
+      var emotions = ['anger', 'anticipation' , 'joy' , 'trust' , 'fear' , 'surprise' , 'sadness', 'disgust' ];
+      var colors1 = ['#8dd3c7','#ffffb3','#bebada','#fb8072','#80b1d3','#fdb462','#b3de69','#fccde5'];
+//      var colors = ['#FF0000','#FFA500','#FFFF00','#00FF00','#008000','#3BB9FF','#6960EC','#FF00FF'];
+      var colors = ['#e41a1c','#ff7f00','#ffff33','#b2df8a','#4daf4a','#f781bf','#377eb8','#984ea3'];
+      var colors0 = ["#FF7200","#FFE736","#00AE00","#D10000","#007700","#DC00DD","#0000C5","#007DDF"];
+      var colors2 = ["#000000","#DF0101","#08298A","#0080FF","#424242","#585858","#848484","#BDBDBD"];
+      var width= $("#chart").width(),
+      height=483,
+      margin=10;
+      var k = height / width,
+      x0 = [-4.5, 4.5],
+      y0 = [-4.5 * k, 4.5 * k],
+      x = d3.scaleLinear().domain(x0).range([0, width]),
+      y = d3.scaleLinear().domain(y0).range([height, 0]),
+      z = d3.scaleOrdinal(d3.schemeCategory10);
+
+      var xAxis = d3.axisTop(x).ticks(12),
+      yAxis = d3.axisRight(y).ticks(12 * height / width);
+
+      var svg = d3.select("#chart")
+      .append("svg")
+      .attr("width", width-margin-margin)
+      .attr("height", height-margin-margin)
+      .on("dblclick.zoom", null)
+      .call(d3.zoom().on("zoom", function () {
+        //console.log(d3.event.transform );
+        svg.attr('transform', 'translate(' + d3.event.transform.x + ',' + d3.event.transform.y + ') scale(' + d3.event.transform.k + ')');
+       }))
+      .append("g")
+      .attr("transform","translate("+margin+","+margin+")");
+
+      var brush = d3.brush().on("end", brushended),
+      idleTimeout,
+      idleDelay = 350;
+
+      svg.append("g")
+      .attr("class", "brush")
+      .call(brush);
+      d3.csv(filetoload, function(data) {
+		$("#chart").data('origJson',data);
+        data.forEach(function(d){
+          //console.log(d);
+          if (parseFloat(d['x']) > xMax) {xMax = parseFloat(d['x'])};
+          if (parseFloat(d['y']) > yMax) {yMax = parseFloat(d['y'])};
+          if (parseFloat(d['x']) < xMin) {xMin = parseFloat(d['x'])};
+          if (parseFloat(d['y']) < yMin) {yMin = parseFloat(d['y'])};
+
+          if (parseFloat(d['anger']) > iMax.anger) {iMax.anger = parseFloat(d['anger'])};
+          if (parseFloat(d['anticipation']) > iMax.anticipation) {iMax.anticipation = parseFloat(d['anticipation'])};
+          if (parseFloat(d['joy']) > iMax.joy) {iMax.joy = parseFloat(d['joy'])};
+          if (parseFloat(d['trust']) > iMax.trust) {iMax.trust = parseFloat(d['trust'])};
+          if (parseFloat(d['fear']) > iMax.fear) {iMax.fear = parseFloat(d['fear'])};
+          if (parseFloat(d['surprise']) > iMax.surprise) {iMax.surprise = parseFloat(d['surprise'])};
+          if (parseFloat(d['sadness']) > iMax.sadness) {iMax.sadness = parseFloat(d['sadness'])};
+          if (parseFloat(d['disgust']) > iMax.disgust) {iMax.disgust = parseFloat(d['disgust'])};
+
+          if (parseFloat(d['anger']) < iMin.anger) {iMin.anger = parseFloat(d['anger'])};
+          if (parseFloat(d['anticipation']) < iMin.anticipation) {iMin.anticipation = parseFloat(d['anticipation'])};
+          if (parseFloat(d['joy']) < iMin.joy) {iMin.joy = parseFloat(d['joy'])};
+          if (parseFloat(d['trust']) < iMin.trust) {iMin.trust = parseFloat(d['trust'])};
+          if (parseFloat(d['fear']) < iMin.fear) {iMin.fear = parseFloat(d['fear'])};
+          if (parseFloat(d['surprise']) < iMin.surprise) {iMin.surprise = parseFloat(d['surprise'])};
+          if (parseFloat(d['sadness']) < iMin.sadness) {iMin.sadness = parseFloat(d['sadness'])};
+          if (parseFloat(d['disgust']) < iMin.disgust) {iMin.disgust = parseFloat(d['disgust'])};
+        });//end data.forEach(function(d)
+
+        zData = data;
+        // creates an EMOCHART from the data, with the defined configuration object
+        // console.log(xMin+'::'+xMax);
+        // console.log(yMin+'::'+yMax);
+        var emoChart = new emovis.emoglyph(padding,iMax, iMin, svg,data,getConfig(filters),xMin,xMax,yMin,yMax);
+
+      });//end d3.csv(filetoload, function(data)
+
+      function getConfig(filters){
+        var width= $("#chart").width(),
+            height=$("#chart").height(),
+            margin=5;
+        return {
+              size:12,
+              emotions: emotions,
+              colors1: colors1,
+              colors: colors,
+              colors0: colors0,
+              colors2: colors2,
+              title: "movieTitle",
+              total: "Total",
+              width:width-margin-margin,
+              height:height-margin-margin,
+              filters:filters,
+            };
+      }
+
+/*      function doFilters(filters){
+        //console.log(zData);
+        //d3.selectAll("svg").remove();
+        svg = d3.selectAll("svg");
+        d3.selectAll(".glyph").remove();
+
+        var emoChart = new emovis.emoglyph(padding,iMax, iMin, svg,zData,getConfig(filters,xMin,xMax,yMin,yMax));
+      }
+*/	  
+      function brushended() {
+        var s = d3.event.selection;
+        var scale = 1;
+        console.log(s);
+        if (!s) {
+          if (!idleTimeout) return idleTimeout = setTimeout(idled, idleDelay);
+          x.domain(x0);
+          y.domain(y0);
+        } else {
+          x.domain([s[0][0], s[0][1]].map(x.invert, x));
+          y.domain([s[1][0], s[1][1]].map(y.invert, y));
+          svg.select(".brush").call(brush.move, null);
+          scale = s[0][0]/s[1][1];
+        }
+        //console.log(scale);
+        //svg.attr('transform', 'translate(' + s[0][1] + ',' + s[1][1] + ') scale(' + scale + ')');
+        svg.attr('transform', 'scale(' + scale + ')');
+        //zoom();
+      }
+
+      function idled() {
+        idleTimeout = null;
+      }
+
+      function zoom() {
+        var t = svg.transition().duration(750);
+
+        //console.log(d3.event.transform );
+        // svg.select(".axis--x").transition(t).call(xAxis);
+        // svg.select(".axis--y").transition(t).call(yAxis);
+        // svg.selectAll(".glyph rect").transition(t)
+        //     .attr("x", function(d) {
+        //       console.log(d.x);
+        //       return x(d.x);
+        //     })
+        //     .attr("y", function(d) {
+        //       console.log(d.y);
+        //       return y(d.y);
+        //     });
+      }
+		
+	  var titleSource = Array.from(emovis.getAllTitles());
+			$(".filter-movie-title").autocomplete({
+      			source: titleSource
+		    });
+	
+		});
+	</script>
+	<script src="jquery.switcher.min.js"></script>
+	<link href="all.min.css" rel="stylesheet">
+	<link href="switcher.css" rel="stylesheet">
+	<style>
+		.filter-launcher {
+			float: right;
+			font-size: 1.25rem;
+			position: fixed;
+    	top: 1rem;
+    	right: 2rem;
+		}
+
+		.filter-panel {
+			background: #f7f7f7;
+			border: 1px solid;
+    	border-color: #464444;
+			z-index: 2;
+		}
+
+		.filter-enable-toggle {
+			position: relative;
+			right: 2rem;
+		}
+
+		.ui-switcher {
+			position: relative;
+			left: 95%;
+			top: -2rem;
+		}
+
+		.filter-movies-title {
+			text-align: center;
+			margin-bottom: 0px;
+		}
+
+		.filter-launcher.active {
+			display: true
+		}
+
+		.emotion-range.ui-slider {
+			min-height: 200px;
+			margin-left: .5rem;
+		}
+
+		.ui-accordion .ui-accordion-content {
+			background: #42343412
+		}
+
+		.ui-accordion .ui-accordion-header {
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+
+		.filters-sidebar.ui-accordion-disabled {
+			opacity: .99;
+		}
+		.btn.filter-action{
+			background: #00800094;
+    	color: white;
+    	position: fixed;
+    	right: 2rem;
+    	bottom: 2rem;
+		}
+
+		.star-rating, .back-stars, .front-stars {
+  			display: flex;
+		}
+
+		.star-rating {
+			font-size: 2rem;
+			font-size: 1.5rem;
+			text-shadow: 0px 0px 0px;
+			font-weight: bold;
+				padding-top: .5rem;
+			padding-bottom: .5rem;
+		}
+
+		/* .star-rating {
+		align-items: center;
+		font-size: 3em;
+		justify-content: center;
+		margin-top: 50px;
+		}
+
+		.back-stars {
+		color: #bb5252;
+		position: relative;
+		text-shadow: 4px 4px 10px #843a3a;
+		} */
+
+		.front-stars {
+		color: #FFBC0B;
+		/* overflow: hidden;
+		position: absolute; */
+		text-shadow: 2px 2px 5px #d29b09;
+		/* top: 0; */
+			font-size: 1.5rem;
+			padding-top: 1px;
+			position: relative;
+    top: -.5rem;
+		}
+
+		.star-rating-icon {
+			padding-left: .75rem;
+		}
+
+		.movieYearSelect{
+			min-width: 150px;
+		}
+		.movieYearToLabel{
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+		.movie-info-filter-input-label{
+			padding-right: 2rem;
+		}
+		.movie-info-filter-input-box{
+			width: 100%;
+		}
+		.movie-info-filter-container{
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
+		.filter-reset-action{
+			position: relative;
+			left: 4%;
+			top: -1.75rem;
+			margin: -2rem;
+		}
+		#filters-container4 {
+			padding-left: 5px;
+    padding-right: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<nav id="menu" class="filter-panel" role="navigation">
+		<div id="filter-reset-confirm" title="Reset Filters?">
+			<p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>Are you sure to turn-off all the filters?</p>
+		</div>
+		<h3 class='filter-movies-title'> Filter Movies </h3>
+		<i class="btn fas fa-undo filter-reset-action" title="Reset Filters"></i>
+		<input class="filter-enable-toggle form-check-input" type="checkbox" name="filterToggle" id="fitlerToggleId" value="true">
+		<div class="filters-sidebar">
+			<!-- <div class='filter-category'> -->
+			<h3 class='filter-category-header'>Emotions</h3>
+			<div id="filters-container4">
+				<div>
+					<div class='emotion-range-container'>
+						<div class='emotion-range-label'>Anger</div>
+						<div class='emotion-range-value'>0</div>
+						<div class='emotion-range anger'>0</div>
+					</div>
+
+					<div class='emotion-range-container'>
+						<div class='emotion-range-label'>Joy</div>
+						<div class='emotion-range-value'>0</div>
+						<div class='emotion-range joy'>0</div>
+					</div>
+
+					<div class='emotion-range-container'>
+						<div class='emotion-range-label'>Trust</div>
+						<div class='emotion-range-value'>0</div>
+						<div class='emotion-range trust'>0</div>
+					</div>
+
+					<div class='emotion-range-container'>
+						<div class='emotion-range-label'>Fear</div>
+						<div class='emotion-range-value'>0</div>
+						<div class='emotion-range fear'>0</div>
+					</div>
+
+					<div class='emotion-range-container'>
+						<div class='emotion-range-label'>Surprise</div>
+						<div class='emotion-range-value'>0</div>
+						<div class='emotion-range surprise'>0</div>
+					</div>
+
+					<div class='emotion-range-container'>
+						<div class='emotion-range-label'>Sad</div>
+						<div class='emotion-range-value'>0</div>
+						<div class='emotion-range sadness'>0</div>
+					</div>
+
+					<div class='emotion-range-container'>
+						<div class='emotion-range-label'>Disgust</div>
+						<div class='emotion-range-value'>0</div>
+						<div class='emotion-range disgust'>0</div>
+					</div>
+
+					<div class='emotion-range-container'>
+						<div class='emotion-range-label'>Anticipation</div>
+						<div class='emotion-range-value'>0</div>
+						<div class='emotion-range anticipation'>0</div>
+					</div>
+				</div>
+
+			</div>
+
+			<h3 class='filter-category-header'>Rating</h3>
+			<div id="filters-container">
+				<div>
+					<div class="star-rating">
+							<input class='star-rating-checkbox' type="radio" name="rating-filter"  value="9+">
+							<div class="front-stars" title="9 & above">
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>	
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star-half" aria-hidden="true"></i>
+							</div>
+					</div>
+					<div class="star-rating">
+							<input class='star-rating-checkbox' type="radio" name="rating-filter"  value="8+">
+							<div class="front-stars" title="8 & above">
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>	
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star-half" aria-hidden="true"></i>
+							</div>
+					</div>
+					<div class="star-rating">
+							<input class='star-rating-checkbox' type="radio" name="rating-filter"  value="7+">
+							<div class="front-stars" title="7 & above">
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>	
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star-half" aria-hidden="true"></i>
+							</div>
+					</div>
+					<div class="star-rating">
+							<input class='star-rating-checkbox' type="radio" name="rating-filter" value="6+">
+							<div class="front-stars" title="6 & above">
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>	
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star-half" aria-hidden="true"></i>
+							</div>
+					</div>
+					<div class="star-rating">
+							<input class='star-rating-checkbox' type="radio" name="rating-filter"  value="5+">
+							<div class="front-stars" title="5 & above">
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>	
+								<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star-half" aria-hidden="true"></i>
+							</div>
+					</div>
+					<div class="star-rating">
+							<input class='star-rating-checkbox' type="radio" name="rating-filter"  value="4+">
+							<div class="front-stars" title="4 & above">
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star-half" aria-hidden="true"></i>
+							</div>
+					</div>
+					<div class="star-rating">
+							<input class='star-rating-checkbox' type="radio" name="rating-filter"  value="3+">
+							<div class="front-stars" title="3 & above">
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star-half" aria-hidden="true"></i>
+							</div>
+					</div>
+					<div class="star-rating">
+							<input class='star-rating-checkbox' type="radio" name="rating-filter"  value="2+">
+							<div class="front-stars" title="2 & above">
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star-half" aria-hidden="true"></i>
+							</div>
+					</div>
+					<div class="star-rating">
+							<input class='star-rating-checkbox' type="radio" name="rating-filter"  value="1+">
+							<div class="front-stars" title="1 & above">
+									<i class="star-rating-icon fa fa-star" aria-hidden="true"></i>
+									<i class="star-rating-icon fa fa-star-half" aria-hidden="true"></i>
+							</div>
+					</div>
+				</div>
+			</div>
+
+			<h3 class='filter-category-header'>Year</h3>
+			<div id="filters-container2">
+					<select class="movieYearSelect" name="fromYear" id="fromYear">
+							<option>1950</option>
+							<option>1951</option>
+							<option>1952</option>
+							<option>1953</option>
+							<option>1954</option>
+							<option>1955</option>
+							<option>1956</option>
+							<option>1957</option>
+							<option>1958</option>
+							<option>1959</option>
+							<option>1960</option>
+							<option>1961</option>
+							<option>1962</option>
+							<option>1963</option>
+							<option>1964</option>
+							<option>1965</option>
+							<option>1966</option>
+							<option>1967</option>
+							<option>1968</option>
+							<option>1969</option>
+							<option>1970</option>
+							<option>1971</option>
+							<option>1972</option>
+							<option>1973</option>
+							<option>1974</option>
+							<option>1975</option>
+							<option>1976</option>
+							<option>1977</option>
+							<option>1978</option>
+							<option>1979</option>
+							<option>1980</option>
+							<option>1981</option>
+							<option>1982</option>
+							<option>1983</option>
+							<option>1984</option>
+							<option>1985</option>
+							<option>1986</option>
+							<option>1987</option>
+							<option>1988</option>
+							<option>1989</option>
+							<option>1990</option>
+							<option>1991</option>
+							<option>1992</option>
+							<option>1993</option>
+							<option>1994</option>
+							<option>1995</option>
+							<option>1996</option>
+							<option>1997</option>
+							<option>1998</option>
+							<option>1999</option>
+							<option>2000</option>
+							<option>2001</option>
+							<option>2002</option>
+							<option>2003</option>
+							<option>2004</option>
+							<option>2005</option>
+							<option>2006</option>
+							<option>2007</option>
+							<option>2008</option>
+							<option>2009</option>
+							<option>2010</option>
+							<option>2011</option>
+							<option>2012</option>
+							<option>2013</option>
+							<option>2014</option>
+							<option>2015</option>
+							<option>2016</option>
+							<option selected="selected">2017</option>
+							<option>2018</option>
+							<option>2019</option>
+							<option>2020</option>
+						</select>
+						<span class="movieYearToLabel" > to </span>
+						<select class="movieYearSelect" name="toYear" id="toYear">
+								<option>1950</option>
+								<option>1951</option>
+								<option>1952</option>
+								<option>1953</option>
+								<option>1954</option>
+								<option>1955</option>
+								<option>1956</option>
+								<option>1957</option>
+								<option>1958</option>
+								<option>1959</option>
+								<option>1960</option>
+								<option>1961</option>
+								<option>1962</option>
+								<option>1963</option>
+								<option>1964</option>
+								<option>1965</option>
+								<option>1966</option>
+								<option>1967</option>
+								<option>1968</option>
+								<option>1969</option>
+								<option>1970</option>
+								<option>1971</option>
+								<option>1972</option>
+								<option>1973</option>
+								<option>1974</option>
+								<option>1975</option>
+								<option>1976</option>
+								<option>1977</option>
+								<option>1978</option>
+								<option>1979</option>
+								<option>1980</option>
+								<option>1981</option>
+								<option>1982</option>
+								<option>1983</option>
+								<option>1984</option>
+								<option>1985</option>
+								<option>1986</option>
+								<option>1987</option>
+								<option>1988</option>
+								<option>1989</option>
+								<option>1990</option>
+								<option>1991</option>
+								<option>1992</option>
+								<option>1993</option>
+								<option>1994</option>
+								<option>1995</option>
+								<option>1996</option>
+								<option>1997</option>
+								<option>1998</option>
+								<option>1999</option>
+								<option>2000</option>
+								<option>2001</option>
+								<option>2002</option>
+								<option>2003</option>
+								<option>2004</option>
+								<option>2005</option>
+								<option>2006</option>
+								<option>2007</option>
+								<option>2008</option>
+								<option>2009</option>
+								<option>2010</option>
+								<option>2011</option>
+								<option>2012</option>
+								<option>2013</option>
+								<option>2014</option>
+								<option>2015</option>
+								<option>2016</option>
+								<option>2017</option>
+								<option selected="selected">2018</option>
+								<option>2019</option>
+								<option>2020</option>
+							</select>
+			</div>
+			
+			<h3 class='filter-category-header'>Movie Info</h3>
+			<div id="filters-container3">
+				<div class='movie-info-filter-container'>
+						<label class='movie-info-filter-input-label'>Genre</label>
+						<select class="filter-movie-genre movie-info-filter-input-box" name="movieGenre" id="genre">
+								<option selected="selected" value="NONE" disabled>Select Genre</option>
+						</select>
+				</div>
+
+				<div class='movie-info-filter-container'> 
+						<label class='movie-info-filter-input-label'>Title</label>
+						<input class='filter-movie-title movie-info-filter-input-box' type="text" placeholder="Name of the movie">
+				</div>
+
+				<div class='movie-info-filter-container'> 
+						<label class='movie-info-filter-input-label'>Director</label>
+						<input class='filter-movie-director movie-info-filter-input-box' type="text" placeholder="Name of the director">
+				</div>
+
+				<div class='movie-info-filter-container'> 
+						<label class='movie-info-filter-input-label'>Writer</label>
+						<input class='filter-movie-writer movie-info-filter-input-box' type="text" placeholder="Name of the writer">
+				</div>
+
+				<div class='movie-info-filter-container'> 
+						<label class='movie-info-filter-input-label'>Cast</label>
+						<input class='filter-movie-cast movie-info-filter-input-box' type="text" placeholder="Name of the cast">
+				</div>
+			</div>
+		</div>
+		<a class="filter-action btn" href="#">
+				<i class="fas fa-check-circle"></i> OK
+		</a>
+	</nav>
+	<p>Movies Emotion Map</p>
+	<div id="chart"></div><br>
+<!--	<p>Movie List</p>
+	<div id="movielist"><div id="table"></div></div>  !-->
+  <div id="results">
+	<h2 class='results-heading'>Results</h2>
+	<div id="results-accordion">
+		
+	</div>
+  </div>
+  <div id="progressbar" class='hide'><div class="progress-label">Loading Movies...</div></div>
+	<i id="filter-launcher" class="filter-launcher fas fa-filter">
+		</a>
+</body>
+
+</html>

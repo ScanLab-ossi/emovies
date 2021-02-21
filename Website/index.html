@@ -1,0 +1,1170 @@
+<!-- v2 -->
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="./css/jquery-ui.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/tooltipster.bundle.min.css">
+  <link rel="stylesheet" href="./css/tooltipster-sideTip-shadow.min.css">
+  <link rel="stylesheet" href="./css/table.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="./css/all.min.css" rel="stylesheet">
+  <link href="./css/form.css" rel="stylesheet">
+  <link href="./css/switcher.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+  <!-- Jquesry Emotions Slider -->
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/emotions-filter-slider.js"></script>
+  <script src="./js/RadarChart.js"></script>
+  <script type="text/javascript">
+    $(window).on('load', function () {
+      $('#startModal').modal('show');
+    });
+  </script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm">
+    <a class="navbar-brand" href="#"><img src="css/images/logo.png">
+      <h1 class="glitch">
+        <span aria-hidden="true">EMovies</span>
+        Emovies
+        <span aria-hidden="true">EMovies</span>
+      </h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--<div class="collapse navbar-collapse menu" id="collapsibleNavbar">-->
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a data-toggle="modal" id="formBtnn" type="button" class="fun" data-toggle="modal"
+            data-target="#formModal">Start Questionnaire</a>
+        </li>
+        <li class="nav-item">
+          <a data-toggle="modal" href="#helpModal" class="nav-link">Info</a>
+        </li>
+        <li class="nav-item">
+          <a data-toggle="modal" href="#aboutModal" class="nav-link">About Us</a>
+        </li>
+      </ul>
+
+
+
+    </div>
+  </nav>
+  <div class="main-wrapper container-fluid">
+    <div class="row">
+      <div class="col flex-fixed-width-item sidebar" style="background:#303642">
+        <p style="color:white; font-size:13px;">Each movie represented by such Glyph:</p>
+        <div class="sidebar-box">
+          <div class="glyphLegend">
+            <div class="row">
+              <div class="col col-anticipation">Anticipation</div>
+              <div class="col col-joy">Joy</div>
+              <div class="col col-trust">Trust</div>
+            </div>
+            <div class="row">
+              <div class="col col-anger">Anger</div>
+              <div class="col col-empty"> </div>
+              <div class="col col-fear">Fear</div>
+            </div>
+            <div class="row">
+              <div class="col col-disgust">Disgust</div>
+              <div class="col col-sadness">Sadness</div>
+              <div class="col col-surprise">Surprise</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="sidebar-box">
+            <div class="input-group mb-3">
+              <input type="text" class="filter-movie-title movie-info-filter-input-box"
+                placeholder="Find movie by title">
+              <div class="input-group-append">
+                <button class="btn searchmovie" href="#" type="button"><img src="./css/images/search.png"
+                    alt="" /></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="sidebar-box">
+          <p class="explanation">Select the minimum emotion value and other filters then click FILTER MOVIES</p>
+
+          <h3 class="mb-3">Emotions</h3>
+
+          <div class="emotion-slider" id="glyph-slider">
+
+            <div class="emotislider-group slider-anticipation">
+              <div class="s-label">Anticipation</div>
+              <div id="slider-anticipation" class="emotislider">
+                <div id="s-anticipation" class="ui-slider-handle"></div>
+              </div>
+            </div>
+
+            <div class="emotislider-group slider-joy">
+              <div class="s-label">Joy</div>
+              <div id="slider-joy" class="emotislider">
+                <div id="s-joy" class="ui-slider-handle"></div>
+              </div>
+            </div>
+
+            <div class="emotislider-group slider-trust">
+              <div class="s-label">Trust</div>
+              <div id="slider-trust" class="emotislider">
+                <div id="s-trust" class="ui-slider-handle"></div>
+              </div>
+            </div>
+
+            <div class="emotislider-group slider-anger">
+              <div class="s-label">Anger</div>
+              <div id="slider-anger" class="emotislider">
+                <div id="s-anger" class="ui-slider-handle anger"></div>
+              </div>
+            </div>
+
+            <div class="placeholder-glyph"></div>
+
+            <div class="emotislider-group slider-fear">
+              <div class="s-label">Fear</div>
+              <div id="slider-fear" class="emotislider">
+                <div id="s-fear" class="ui-slider-handle"></div>
+              </div>
+            </div>
+
+            <div class="emotislider-group slider-disgust">
+              <div class="s-label">Disgust</div>
+              <div id="slider-disgust" class="emotislider">
+                <div id="s-disgust" class="ui-slider-handle"></div>
+              </div>
+            </div>
+
+            <div class="emotislider-group slider-sadness">
+              <div class="s-label">Sadness</div>
+              <div id="slider-sadness" class="emotislider">
+                <div id="s-sadness" class="ui-slider-handle"></div>
+              </div>
+            </div>
+
+            <div class="emotislider-group slider-surprise">
+              <div class="s-label">Surprise</div>
+              <div id="slider-surprise" class="emotislider">
+                <div id="s-surprise" class="ui-slider-handle"></div>
+              </div>
+            </div>
+
+          </div>
+          <div style="clear:both"></div>
+          <button id="vector_btn" class="fun col-12">Filter By Vector</button>
+
+
+        </div>
+
+
+        <div class="sidebar-box">
+          <h3>More filters</h3>
+          <div class="collapse-group">
+
+            <!-- Star rating filter -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="true"
+                    aria-controls="collapseTwo" class="trigger collapsed">
+                    Rating
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+
+                  <div class="clearfix">
+                    <form>
+                      <input id="rating-system" type="number" class="rating" min="1" max="10" step="1">
+
+                      <div class="star-rating-btns">
+                        <button class="btn" type="hidden" style="display: none;">Submit</button>
+                        <button class="btn-reset" type="reset" style="display: none;">Reset</button>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- /Star rating filter -->
+
+            <!-- Date filter -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="true"
+                    aria-controls="collapseThree" class="trigger collapsed">
+                    Release date
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  <div id="filters-container2 clearfix">
+                    <div class="row">
+                      <div class="col-5">
+                        <select class="movieYearSelect" name="fromYear" id="fromYear">
+                          <option selected="selected" value="NONE">From Year</option>
+                          <option>1890</option>
+                          <option>1900</option>
+                          <option>1920</option>
+                          <option>1910</option>
+                          <option>1920</option>
+                          <option>1930</option>
+                          <option>1940</option>
+                          <option>1950</option>
+                          <option>1960</option>
+                          <option>1970</option>
+                          <option>1980</option>
+                          <option>1990</option>
+                          <option>2000</option>
+                          <option>2010</option>
+                          <option>2020</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <span class="movieYearToLabel"> to </span>
+                      </div>
+                      <div class="col-5">
+                        <select class="movieYearSelect1" name="toYear" id="toYear">
+                          <option selected="selected" value="NONE">To Year</option>
+                          <option></option>
+                          <option>1890</option>
+                          <option>1900</option>
+                          <option>1920</option>
+                          <option>1910</option>
+                          <option>1920</option>
+                          <option>1930</option>
+                          <option>1940</option>
+                          <option>1950</option>
+                          <option>1960</option>
+                          <option>1970</option>
+                          <option>1980</option>
+                          <option>1990</option>
+                          <option>2000</option>
+                          <option>2010</option>
+                          <option>2020</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <!-- /Date filter -->
+
+            <!-- Genre filter -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="true"
+                    aria-controls="collapseFour" class="trigger collapsed">
+                    Genre
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  <select class="filter-movie-genre movie-info-filter-input-box" name="movieGenre" id="genre">
+                    <option selected="selected" value="NONE">Select Genre</option>
+                    <option>Crime </option>
+                    <option>Action </option>
+                    <option>Animation </option>
+                    <option>Drama </option>
+                    <option>Comedy </option>
+                    <option>Adventure </option>
+                    <option>Biography </option>
+                    <option>Horror </option>
+                    <option>Musical </option>
+                    <option>Mystery </option>
+                    <option>Sci-Fi </option>
+                    <option>Romance </option>
+                    <option>Documentary </option>
+                    <option>Family </option>
+                    <option>Fantasy </option>
+                    <option>Thriller</option>
+                    <option>History </option>
+
+                  </select>
+
+
+                </div>
+              </div>
+            </div>
+            <!-- /Genre filter -->
+
+            <!-- Cast filter -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="true"
+                    aria-controls="collapseFive" class="trigger collapsed">
+                    Participants
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  <div class='movie-info-filter-container'>
+                    <input class='filter-movie-director movie-info-filter-input-box' type="text" placeholder="Director">
+                  </div>
+
+                  <div class='movie-info-filter-container'>
+                    <input class='filter-movie-writer movie-info-filter-input-box' type="text"
+                      placeholder="Screenwriter">
+                  </div>
+
+                  <div class='movie-info-filter-container'>
+                    <input class='filter-movie-cast movie-info-filter-input-box' type="text" placeholder="Cast">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Cast filter -->
+          </div>
+          <!-- /collapse-group -->
+
+
+          <!--<div class="row glyph-filter mt-4 text-center">
+		<div class="row px-2">
+		  <div class="col-6"><button href="#" type="submit" class="btn filter-btn">FILTER ALL</button></div>
+		  <div class="col-6"><button type="reset" class="btn filter-btn filter-reset-btn">CLEAR ALL</button></div>     
+		</div>
+	</div> -->
+
+          <!-- Filter Buttons -->
+          <div class="row glyph-filter mt-4 text-center">
+            <button href="#" type="submit" class="fun filter-btn col-6" align="left">FILTER MOVIES</button>
+            <button type="reset" class="grey filter-reset-btn col-6">CLEAR FILTERS</button>
+          </div>
+
+          <!-- /Filter Buttons -->
+
+
+        </div>
+        <!-- /sidebar-box -->
+
+
+      </div>
+      <!-- /sidebar -->
+
+
+      <!-- THE MAP -->
+
+      <div class="col">
+        <div class="row">
+          <div class="chart-container">
+            <div id="chart"></div>
+          </div>
+        </div>
+        </br>
+
+
+        <!-- control table -->
+        <div class="row">
+
+          <div class="table-responsive">
+
+            <div class="table-wrapper">
+              <table class="table" id="table_movies" style="width: 100%; max-width: 75%;">
+                <colgroup>
+                  <col span="1" style="width: 20%;">
+                  <col span="1" style="width: 8%;">
+                  <col span="1" style="width: 8%;">
+                  <col span="1" style="width: 8%;">
+                  <col span="1" style="width: 8%;">
+                  <col span="1" style="width: 8%;">
+                  <col span="1" style="width: 8%;">
+                  <col span="1" style="width: 8%;">
+                  <col span="1" style="width: 8%;">
+                  <col span="1" style="width: 8%;">
+                  <col span="1" style="width: 8%;">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">Rating</th>
+                    <th scope="col">Anticipation</th>
+                    <th scope="col">Joy</th>
+                    <th scope="col">Trust</th>
+                    <th scope="col">Surprise</th>
+                    <th scope="col">Anger</th>
+                    <th scope="col">Fear</th>
+                    <th scope="col">Disgust</th>
+                    <th scope="col">Sadness</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class='clickable-row'>
+                    <th scope="row">1</th>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                  </tr>
+                  <tr class='clickable-row'>
+                    <th scope="row">1</th>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                  </tr>
+                  <tr class='clickable-row'>
+                    <th scope="row">1</th>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+        <!-- control table end -->
+
+
+      </div>
+
+
+      <!-- /THE MAP -->
+
+      <!-- HIDDEN -->
+      <div class="right" style="display:none">
+        <input type="checkbox" id="labels" checked>
+        <label for="labels"> Enable/Disable the Lables</label>
+      </div>
+      <!-- /HIDDEN -->
+
+    </div>
+
+  </div>
+  </div>
+
+
+  <!-- <section id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <p>  <a href="#"></a></p>
+        </div>
+        <div class="col-6">
+          <p class="text-right"></p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!------------------------------------------------------------------------------------>
+  <!-- Start Modal -->
+  <!--  <div class="modal" id="startModal">-->
+  <!--    <div class="modal-dialog">-->
+  <!--      <div class="modal-content">-->
+
+  <!--        &lt;!&ndash; Modal Header &ndash;&gt;-->
+  <!--        <div class="modal-header">-->
+  <!--          <h3 class="modal-title">Welcome to Movies Emotion Map</h3>-->
+
+  <!--          <button type="button" class="close" data-dismiss="modal">×</button>-->
+  <!--        </div>-->
+
+  <!--        &lt;!&ndash; Modal body &ndash;&gt;-->
+  <!--        <div class="modal-body">-->
+  <!--          <div class="row">-->
+  <!--            <div>-->
+  <!--              <p>The map includes emotions of movies.<br>-->
+  <!--                Each movie’s dominating emotions represented by a glyph, as describe below.<br>-->
+  <!--                The emotions represent users reviews of iMDB web site.-->
+  <!--                The map shows only movies from year 2003 to 2014 only.<br>-->
+  <!--                You can view the glyph legend at any time on the left hand menu.-->
+  <!--                Each emotion is represented by a color according to the glyph example.</p>-->
+  <!--              <p>Use <em>Help</em> to find more info</p>-->
+  <!--            </div>-->
+  <!--            <p style="color:gray; font-size:16px; align:right"><u> Movie Glyph Legend</u></p>-->
+  <!--            <div class="col-6 ">-->
+  <!--              <div class="glyphLegend">-->
+  <!--                <div class="row">-->
+  <!--                  <div class="col col-anticipation">Anticipation</div>-->
+  <!--                  <div class="col col-joy">Joy</div>-->
+  <!--                  <div class="col col-trust">Trust</div>-->
+  <!--                </div>-->
+  <!--                <div class="row">-->
+  <!--                  <div class="col col-anger">Anger</div>-->
+  <!--                  <div class="col col-empty"> </div>-->
+  <!--                  <div class="col col-fear">Fear</div>-->
+  <!--                </div>-->
+  <!--                <div class="row">-->
+  <!--                  <div class="col col-disgust">Disgust</div>-->
+  <!--                  <div class="col col-sadness">Sadness</div>-->
+  <!--                  <div class="col col-surprise">Surprise</div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--        </div>-->
+
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+
+
+  <!-- form modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="formModal">
+    <div class="modal-dialog" style="max-width: 60%;">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header ">
+
+          <h1 class="text-center">Welcome to Emovies!</h1>
+          <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+
+            <h5 class="text-center">
+              Let’s begin with a short questionnaire!
+              Choose 20 movies that you like, know, or find interesting!
+            </h5>
+
+          </div>
+
+          <!-- the container where the images are added -->
+          <div class="container-fluid">
+            <div class="row" id="images_row">
+
+            </div>
+          </div>
+
+        </div>
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-2">
+              <button type="button" class="fun2 mt-5" id="next">Additional Movies</button>
+            </div>
+            <div class="col-1">
+              <button type="button" class="fun mt-5" id="finishBtn">Finish</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- End of Form model -->
+
+
+
+
+  <!-- INFO Modal -->
+  <div class="modal" id="helpModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">INFO</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div>
+              <p>The map shows movies organized by emotional vectors.<br>
+                Each movie’s dominating emotions represented by a glyph, as describe below.<br>
+                The emotions calculated via users reviews on iMDB website.
+                The map shows every movie with over 30 reviews on the site<br>
+                Each emotion is represented by a color according to the glyph example.</p>
+            </div>
+            <p style="color:gray; font-size:16px; align:right"><u> Movie Glyph Legend:</u></p>
+            <div class="col-6 ">
+              <div class="glyphLegend">
+                <div class="row">
+                  <div class="col col-anticipation">Anticipation</div>
+                  <div class="col col-joy">Joy</div>
+                  <div class="col col-trust">Trust</div>
+                </div>
+                <div class="row">
+                  <div class="col col-anger">Anger</div>
+                  <div class="col col-empty"> </div>
+                  <div class="col col-fear">Fear</div>
+                </div>
+                <div class="row">
+                  <div class="col col-disgust">Disgust</div>
+                  <div class="col col-sadness">Sadness</div>
+                  <div class="col col-surprise">Surprise</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <br>
+
+              <p style="color:#b169b1; font-size:24px; align:center"><B>The Data</B></p>
+              <p>There are some filters and a search bar to help you deep into the Data.
+                <br>The table below the map shows you emphyrical representation of the Data shown.
+                <br>Click on any glyph to view additional full movie details.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="radarModal">
+  </div>
+  <!-- About Modal -->
+  <div class="modal" id="aboutModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">About Us</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4 class="modal-title">Team</h4>
+          <span> <a href=https://www.scan.haifa.ac.il/ target="_blank">Dr. Osnat Mokryn</a> - Advisor <br> </span>
+          <div class="row col-4">
+            <br>
+            <a href=https://www.linkedin.com/in/gabriel-malin-439590184/ target="_blank">Gabriel Malin </a> <br>
+            <a href=https://www.linkedin.com/in/hadi-samara/ target="_blank">Hadi Samara </a> <br>
+            <a href=https://www.linkedin.com/in/david-duchovni-47aa41185/ target="_blank"> David Duchovni </a> <br>
+          </div>
+          <br>
+          <p>
+          <div class="row col-8">
+            <h4 class="modal-title">Technology Used</h4>
+            Python – Data analysis and collection <br>
+            MongoDB – Database <br>
+            HTML/CSS/JavaScript – Web development <br>
+            Flask – Web framework <br>
+            Bootstrap – Web framework <br>
+          </div>
+          <br>
+          <h4 class="modal-title">Main Libraries</h4>
+          <a href=https:/d3js.org target="_blank"> D3.js </a> <br>
+          <a href=https://pypi.org/project/NRCLex/ target="_blank"> NRCLex </a> <br>
+          <a href=https://imdbpy.github.io/ target="_blank"> IMDbPY </a> <br>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+
+
+  <!---------------------------------------------------------------------------------------------->
+
+
+  <script src="./libs/jquery.min.js"></script>
+  <script src="./libs/bootstrap.min.js"></script>
+  <script src="./libs/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.5.0/papaparse.min.js"></script>
+  <script src="./libs/jquery-ui.min.js"></script>
+  <script src="./libs/tooltipster.bundle.min.js"></script>
+  <script src="./libs/bigSlide.min.js"></script>
+  <script src="./libs/jquery.switcher.min.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+  <script src="./js/emoglyph1.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/table.js"></script>
+
+  <!--<script src="./_init%20project/test2%20-%20Copy%20(3)/emoglyph1.js"></script>-->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var filetoload = "data.csv";
+      d3.csv('data/' + filetoload, function (data) {
+        $("#chart").data('origJson', data);
+        emovis.loadGraphWithData(data, true);
+      }); //end d3.csv(filetoload, function(data)
+    }); //end $(document).ready(function()
+
+
+
+
+  </script>
+  <script>
+    $.getJSON("data/sidebar.json", function (json) {
+
+
+      for (key in json) {
+
+        let val = Math.floor(json[key][0]);
+
+        if (key.includes("anger")) {
+
+          $("#slider-anger").slider("value", val);
+          $("#s-anger").text(val);
+
+
+        } else if (key.includes("anticipation")) {
+
+
+          $("#s-anticipation").text(val);
+          $("#slider-anticipation").slider("value", val);
+
+
+        } else if (key.includes("disgust")) {
+
+
+          $("#s-disgust").text(val);
+          $("#slider-disgust").slider("value", val);
+
+
+        } else if (key.includes("fear")) {
+
+
+          $("#s-fear").text(val);
+          $("#slider-fear").slider("value", val);
+
+        } else if (key.includes("joy")) {
+          $("#slider-joy").slider("value", val);
+          $("#s-joy").text(val);
+
+        } else if (key.includes("sadness")) {
+
+          $("#s-sadness").text(val);
+          $("#slider-sadness").slider("value", val);
+
+
+        } else if (key.includes("surprise")) {
+
+          $("#s-surprise").text(val);
+          $("#slider-surprise").slider("value", val);
+
+
+        } else if (key.includes("trust")) {
+
+          $("#s-trust").text(val);
+          $("#slider-trust").slider("value", val);
+
+
+        }
+
+      }
+      // this will show the info it in firebug console
+    });
+
+
+  </script>
+  <script>
+
+
+    //const sleep = (milliseconds) => {
+    //  return new Promise(resolve => setTimeout(resolve, milliseconds))
+    //}
+
+    var modalLoading = '<div class="modal" id="pleaseWaitDialog" data-backdrop="static" data-keyboard="false" role="dialog">\
+        <div class="modal-dialog">\
+            <div class="modal-content">\
+                <div class="modal-header">\
+                    <h4 class="modal-title">Please wait...</h4>\
+                </div>\
+                <div class="modal-body">\
+                    <div class="progress">\
+                      <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"\
+                      aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%; height: 40px">\
+                      </div>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </div>';
+
+
+    function showPleaseWait() {
+      $(document.body).append(modalLoading);
+      $("#pleaseWaitDialog").modal("show");
+      //	sleep(5000).then(() => {  });
+
+    }
+    function sleep(delay) {
+      var start = new Date().getTime();
+      while (new Date().getTime() < start + delay);
+    }
+
+    function hidePleaseWait() {
+      $("#pleaseWaitDialog").modal("hide");
+    }
+    function sync(fn) {
+      fn();
+      console.log(fn);
+    }
+    function async(fn, callback) {
+      setTimeout(function () {
+        fn();
+        callback();
+      }, 0);
+    }
+
+    $(document).ready(function () {
+
+      let i = 0;
+
+      $("#vector_btn").click(function () {
+
+
+
+        let temp = {
+
+          "anticipation": parseInt($("#s-anticipation").text()),
+          "joy": parseInt($("#s-joy").text()),
+          "trust": parseInt($("#s-trust").text()),
+          "anger": parseInt($("#s-anger").text()),
+          "fear": parseInt($("#s-fear").text()),
+          "disgust": parseInt($("#s-disgust").text()),
+          "sadness": parseInt($("#s-sadness").text()),
+          "surprise": parseInt($("#s-surprise").text())
+
+        };
+
+
+
+        $.ajax({
+          method: "POST",
+          url: "http://127.0.0.1:5000/byVector",
+          data: JSON.stringify({ "data": temp }),
+          dataType: "json",
+          contentType: "application/json",
+          success: function (data) {
+          },
+          complete: function (data) {
+            i++; 
+            let num_str = i.toString();  
+            var filetoload = "data.csv?v="+num_str;
+            d3.csv('data/' + filetoload, function (data) {
+
+
+              $("#chart").data('origJson', data);
+              load_table(data)
+              emovis.loadGraphWithData(data, true);
+
+
+            });
+            $.getJSON("data/sidebar.json?v="+num_str, function (json) {
+
+
+              for (key in json) {
+
+                let val = Math.floor(json[key][0]);
+
+                if (key.includes("anger")) {
+
+                  $("#slider-anger").slider("value", val);
+                  $("#s-anger").text(val);
+
+
+                } else if (key.includes("anticipation")) {
+
+
+                  $("#s-anticipation").text(val);
+                  $("#slider-anticipation").slider("value", val);
+
+
+                } else if (key.includes("disgust")) {
+
+
+                  $("#s-disgust").text(val);
+                  $("#slider-disgust").slider("value", val);
+
+
+                } else if (key.includes("fear")) {
+
+
+                  $("#s-fear").text(val);
+                  $("#slider-fear").slider("value", val);
+
+                } else if (key.includes("joy")) {
+                  $("#slider-joy").slider("value", val);
+                  $("#s-joy").text(val);
+
+                } else if (key.includes("sadness")) {
+
+                  $("#s-sadness").text(val);
+                  $("#slider-sadness").slider("value", val);
+
+
+                } else if (key.includes("surprise")) {
+
+                  $("#s-surprise").text(val);
+                  $("#slider-surprise").slider("value", val);
+
+
+                } else if (key.includes("trust")) {
+
+                  $("#s-trust").text(val);
+                  $("#slider-trust").slider("value", val);
+
+
+                }
+
+              }
+              // this will show the info it in firebug console
+            });
+
+
+
+            //window.location.reload(true);
+          }
+        });
+      });
+
+      $(".filter-reset-btn").click(function () {
+
+        $('.btn-reset').trigger("click");
+        emovis.movieRatingFilterValue = $('#rating-system').val();
+        sync(showPleaseWait);
+        //sync(emovis.resetFilters);
+        setTimeout(function () {
+          emovis.resetFilters();
+          sync(hidePleaseWait);
+        }, 100);
+        //           emovis.resetFilters();
+      });
+
+
+      $(".filter-btn").click(function (ev) {
+        sync(showPleaseWait);
+        if ($('#rating-system').val() > 0) {
+          setFilterValue('movieRatingFilterValue', $('#rating-system').val());
+
+        };
+        setTimeout(function () {
+          emovis.doFilter();
+          sync(hidePleaseWait);
+        }, 100);
+      });
+
+      $(".searchmovie").on("click", function () {
+        sync(showPleaseWait);
+        setTimeout(function () {
+          emovis.doFilter();
+          sync(hidePleaseWait);
+        }, 100);
+      });
+
+
+      $("#filter-reset-confirm").dialog({
+        appendTo: "#menu",
+        resizable: false,
+        height: "auto",
+        width: 400,
+        modal: true,
+        closeOnEscape: false,
+        closeText: "hide",
+        autoOpen: false,
+        open: function (event, ui) {
+          $("#filter-reset-confirm").dialog("option", "doReset", false);
+        },
+        close: function (event, ui) {
+          var options = $("#filter-reset-confirm").dialog("option");
+          var doReset = options.doReset || false;
+          if (doReset) {
+            emovis.showLoadingWheel();
+            emovis.turnOffFilters();
+            emovis.hideLoadingWheel();
+            emovis.bigSlideAPI.view.toggleClose();
+          } else {
+            //$(".filter-enable-toggle").val("true");
+            $(".filter-enable-toggle").trigger("click");
+          }
+        },
+        buttons: [{
+          text: "Yes",
+          icon: "ui-icon-close",
+          click: function () {
+            $("#filter-reset-confirm").dialog("option", "doReset", true);
+            $(this).dialog("close");
+          }
+        },
+        {
+          text: "No",
+          icon: "ui-icon-close",
+          click: function () {
+            $("#filter-reset-confirm").dialog("option", "doReset", false);
+            $(this).dialog("close");
+          }
+        }
+        ]
+      });
+
+      //        $.switcher('.filter-enable-toggle');
+      //        $(".filter-reset-btn").click(function (ev) {
+      //			showPleaseWait();
+      //            emovis.doFilter();
+      //				hidePleaseWait();
+
+      //        });
+      /*
+              emovis.bigSlideAPI = $('.filter-launcher').bigSlide({
+                  //easyClose: true,
+                  side: 'right',
+                  menuWidth: '44em',
+                  beforeOpen: function () {},
+                  afterOpen: function () {
+                      $(".filter-action").show();
+                  },
+                  beforeClose: function () {
+                      $(".filter-action").hide();
+                  },
+                  afterClose: function () {}
+              }).bigSlideAPI;
+      
+        	
+      */
+
+      $(".emotion-range").each(function () {
+        // read initial values from markup and remove that
+        var value = parseInt($(this).text(), 10);
+        $(this).empty().slider({
+          value: value,
+          range: "min",
+          min: 0,
+          max: 100,
+          animate: true,
+          orientation: "vertical",
+          stop: function (event, ui) {
+            var valueElem = $(event.target).parent().find('.emotion-range-value')[0];
+            if (valueElem) {
+              valueElem.innerText = ui.value;
+            }
+          }
+        });
+      });
+      $(".filters-sidebar").accordion({
+        heightStyle: "content",
+        collapsible: true
+      });
+
+
+
+
+      // intial view
+      //$(".filter-enable-toggle").trigger('click');
+      //        $(".filter-enable-toggle").trigger('init');
+      //        $(".filter-action").hide();
+
+      var progressbar = $("#progressbar");
+      var progressLabel = $(".progress-label");
+
+      progressbar.progressbar({
+        value: false,
+      });
+
+      /*       $(".star-rating-checkbox").click(function (ev) {
+                 for(let i=0; i< 9-this.value[0]; i++ ){
+                     $('.star-rating .star-rating-checkbox')[i].checked = true
+                 }
+                 for(let i=(9-this.value[0])+1; i< 9; i++ ){
+                     $('.star-rating .star-rating-checkbox')[i].checked = false
+                 }
+                 setFilterValue('movieRatingFilterValue', ev.target.value);
+             });
+     */
+      //$('#rating-system').val();
+      //  $('#rating-system').on('click', alert($('#rating-system').val()));
+      //  $('#rating').onclick(alert('aaaa'));
+
+
+      $('#rating-system').change(setFilterValue('movieRatingFilterValue', $('#rating-system').val()));
+
+
+      $('#fromYear').change(function (ev) {
+        //            setFilterValue('movieToYearFilter', ev.target.value);
+        setFilterValue('movieFromYearFilter', ev.target.value);
+      });
+
+      $('#toYear').change(function (ev) {
+        setFilterValue('movieToYearFilter', ev.target.value);
+        //            setFilterValue('movieFromYearFilter', ev.target.value);
+      });
+
+      $('.filter-movie-title').change(function (ev) {
+        setFilterValue('movieTitleFilter', ev.target.value);
+      });
+
+
+      $('.filter-movie-director').change(function (ev) {
+        setFilterValue('movieDirectorFilter', ev.target.value);
+      });
+
+      $('.filter-movie-writer').change(function (ev) {
+        setFilterValue('movieWriterFilter', ev.target.value);
+      });
+
+
+      $('.filter-movie-cast').change(function (ev) {
+        setFilterValue('movieCastFilter', ev.target.value);
+      });
+
+
+      $('.filter-movie-genre').change(function (ev) {
+        setFilterValue('moviewGenreFilter', ev.target.value);
+      });
+
+      function setFilterValue(filterType, filterValue) {
+        if (filterValue && filterValue.trim().length > 0) {
+          emovis[filterType] = filterValue;
+        } else {
+          emovis[filterType] = undefined;
+        }
+      }
+
+
+    });
+
+  </script>
+
+</body>
+
+</html>
